@@ -5,8 +5,8 @@ const port = process.env.PORT || 3000;
 const errorHandler = require("./middleware/errorHandler");
 const morgan = require("morgan");
 const { createTableUser } = require("./database/auth");
-const { createTableLogistics } = require("./database/logistics");
-const { createTableSell } = require("./database/sell");
+const { createTableBlog } = require("./database/blog");
+const { createTableAutomobile } = require("./database/automobile");
 const { createTableContact } = require("./database/contact");
 
 // app.prepare().then(() => {

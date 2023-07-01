@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /node_modules - Copy
+/node_modules.zip
 /.pnp
 .pnp.js
 
