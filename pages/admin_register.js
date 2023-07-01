@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import Layout from '../components/Layout';
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import Layout from "../components/Layout";
 // import { useMutation } from 'react-query';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { useRouter } from 'next/router';
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useRouter } from "next/router";
+import FetchApiClient from "../fetch_api_clients/api";
 
 export default function AdminRegister() {
   const [data, setData] = useState({
-    admin: 'yes',
+    admin: "yes",
   });
+
+  let apiClient = new FetchApiClient("/user");
   const [isLoading, setIsLoading] = useState(false);
 
   const router = useRouter();
@@ -24,49 +27,56 @@ export default function AdminRegister() {
     setData({ ...data, [e.target.name]: e.target.value });
   };
   const submitNewUser = async () => {
-    if (data.password !== '' && data.cpassword !== '') {
+    if (data.password !== "" && data.cpassword !== "") {
       if (data.password == data.cpassword) {
-        // addUserMutation.mutate(data);
         setIsLoading(true);
-        try {
-          const response = await fetch('/user/register', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-          });
 
-          if (!response.ok) {
-            const res = await response.json();
-            setIsLoading(false);
-            throw new Error(res.msg);
-          }
-          const res = await response.json();
-          toast.success('successful');
-          localStorage.setItem('token', res);
+        let { response, error } = await apiClient.post("/register", data);
+        if (response) {
+          toast.success("successful");
+          localStorage.setItem("token", response);
           setIsLoading(false);
-          router.push('/dashboard/admin/profile');
-        } catch (err) {
+          router.push("/dashboard/admin/profile");
+        } else {
           setIsLoading(false);
-          toast.error(err.message);
+          toast.error(error);
         }
-        // return res;
+
+        // try {
+        //   const response = await fetch("/user/register", {
+        //     method: "POST",
+        //     headers: {
+        //       "Content-Type": "application/json",
+        //     },
+        //     body: JSON.stringify(data),
+        //   });
+
+        //   if (!response.ok) {
+        //     const res = await response.json();
+        //     setIsLoading(false);
+        //     throw new Error(res.msg);
+        //   }
+        //   const res = await response.json();
+        //   toast.success("successful");
+        //   localStorage.setItem("token", res);
+        //   setIsLoading(false);
+        //   router.push("/dashboard/admin/profile");
+        // } catch (err) {
+        //   setIsLoading(false);
+        //   toast.error(err.message);
+        // }
+        // // return res;
       } else {
-        toast.error('password and confirm password are not equal');
+        toast.error("password and confirm password are not equal");
       }
     } else {
-      toast.error('please fill in the details correctly');
+      toast.error("please fill in the details correctly");
     }
   };
   return (
     <Layout title="Register">
       <div id="page-content">
-        <img
-          src="/images/kupon logo with text (1).png"
-          width={100}
-          className="mx-4 my-2"
-        />
+        <img src="/images/tahicon.png" width={70} className="mx-4 my-2" />
         <div className="page section-header text-center">
           <div className="page-title">
             <div className="wrapper">
@@ -121,17 +131,17 @@ export default function AdminRegister() {
                           id="input-telephone"
                           type="tel"
                           required
-                          {...register('telephone', {
-                            required: 'Please enter telephone number',
+                          {...register("telephone", {
+                            required: "Please enter telephone number",
                             minLength: {
                               value: 11,
                               message:
-                                'telephone number must be exacty 11 numbers',
+                                "telephone number must be exacty 11 numbers",
                             },
                             maxLength: {
                               value: 11,
                               message:
-                                'telephone number must be exacty 11 numbers',
+                                "telephone number must be exacty 11 numbers",
                             },
                           })}
                           onChange={handleInputChange}
@@ -164,12 +174,12 @@ export default function AdminRegister() {
                           type="email"
                           name="email"
                           placeholder=""
-                          {...register('email', {
-                            required: 'Please enter email',
+                          {...register("email", {
+                            required: "Please enter email",
                             pattern: {
                               value:
                                 /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/i,
-                              message: 'Please enter valid email',
+                              message: "Please enter valid email",
                             },
                           })}
                           onChange={handleInputChange}
@@ -184,12 +194,12 @@ export default function AdminRegister() {
                           defaultValue=""
                           name="password"
                           id="password"
-                          {...register('password', {
-                            required: 'Please enter password',
+                          {...register("password", {
+                            required: "Please enter password",
                             minLength: {
                               value: 6,
                               message:
-                                'password should be more than 6 characters',
+                                "password should be more than 5 characters",
                             },
                           })}
                           onChange={handleInputChange}
