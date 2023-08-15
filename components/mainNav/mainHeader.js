@@ -30,21 +30,22 @@ export default function MainHeader() {
     if (out) router.push("/login");
   };
 
+  console.log(user);
   return (
     //  <!--Header-->
     <Fragment>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/" className="nav_brand">
           <img
-            src="/images/tahicon.png"
-            width="60"
+            src="/images/taharish-automobile.png"
+            width="150"
             className="d-inline-block align-top"
             alt="Logo"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
-          <Nav className="mr-auto">
+          <Nav className="ml-auto">
             <Nav.Link href="/" className="text-uppercase mx-3">
               Home
             </Nav.Link>
@@ -54,9 +55,9 @@ export default function MainHeader() {
             <Nav.Link href="/contact" className="text-uppercase mx-3">
               Contact Us
             </Nav.Link>
-            <Nav.Link href="/blog" className="text-uppercase mx-3">
+            {/* <Nav.Link href="/blog" className="text-uppercase mx-3">
               Blog
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link href="/automobile" className="text-uppercase mx-3">
               CAR SHOP
             </Nav.Link>
@@ -68,37 +69,46 @@ export default function MainHeader() {
             >
               <div className="container-fluid">
                 <ul
-                  className="navbar-nav"
-                  style={{ position: "absolute", right: "0px" }}
+                  className={`navbar-nav ${
+                    user?.admin == "yes" ? " adminNav" : " userNav"
+                  }`}
+                  // style={{ position: "absolute", right: "0px" }}
                 >
                   {/* <!-- Avatar Menu --> */}
                   {!Object.keys(user).length ? (
-                    <li>
+                    <li className="account_signing">
                       <Link href="/login">
                         <small
                           style={{
                             fontSize: "15px",
                             cursor: "pointer",
+                            border: "1px solid #20B15A",
+                            padding: "7px 12px",
+                            color: "black",
+                            borderRadius: "7px",
+                            cursor: "pointer",
                           }}
                         >
                           {" "}
-                          sign in{" "}
+                          Login{" "}
                         </small>
                       </Link>
                       <Link href="register">
                         <small
                           style={{
-                            backgroundColor: "black",
-                            color: "white",
-                            padding: "2px",
                             fontSize: "15px",
                             cursor: "pointer",
-                            borderRadius: "3px",
+                            border: "1px solid #20B15A",
+                            background: "#20B15A",
+                            padding: "7px 12px",
+                            color: "white",
+                            borderRadius: "7px",
+                            cursor: "pointer",
                           }}
                           className="d-sm-inline"
                         >
                           {" "}
-                          sign&nbsp;up{" "}
+                          Register{" "}
                         </small>
                       </Link>
                     </li>
@@ -121,7 +131,7 @@ export default function MainHeader() {
                             padding: "3px",
                           }}
                         >
-                          {getInitials(user?.firstName, user?.lastName)}
+                          {getInitials(user?.fullName)}
                         </p>
                       </a>
                       {avatarMenu ? (

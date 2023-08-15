@@ -118,7 +118,7 @@ const ComplaintsPage = () => {
             <tbody>
               <tr>
                 <th>Name</th>
-                <td>{modalData?.fullName}</td>
+                <td>{modalData?.firstName + " " + modalData?.lastName}</td>
               </tr>
               <tr>
                 <th>Email</th>
@@ -127,6 +127,10 @@ const ComplaintsPage = () => {
               <tr>
                 <th>Telephone</th>
                 <td>{modalData?.telephone}</td>
+              </tr>
+              <tr>
+                <th>Services Needed</th>
+                <td>{modalData?.services}</td>
               </tr>
             </tbody>
             <tfoot>

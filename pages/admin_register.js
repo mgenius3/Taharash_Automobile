@@ -42,30 +42,7 @@ export default function AdminRegister() {
           toast.error(error);
         }
 
-        // try {
-        //   const response = await fetch("/user/register", {
-        //     method: "POST",
-        //     headers: {
-        //       "Content-Type": "application/json",
-        //     },
-        //     body: JSON.stringify(data),
-        //   });
-
-        //   if (!response.ok) {
-        //     const res = await response.json();
-        //     setIsLoading(false);
-        //     throw new Error(res.msg);
-        //   }
-        //   const res = await response.json();
-        //   toast.success("successful");
-        //   localStorage.setItem("token", res);
-        //   setIsLoading(false);
-        //   router.push("/dashboard/admin/profile");
-        // } catch (err) {
-        //   setIsLoading(false);
-        //   toast.error(err.message);
-        // }
-        // // return res;
+        
       } else {
         toast.error("password and confirm password are not equal");
       }

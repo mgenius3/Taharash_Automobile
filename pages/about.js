@@ -1,101 +1,199 @@
 import Layout from "../components/Layout";
-import React, { Fragment } from "react";
+import Link from "next/link";
+import React, { Fragment, useRef } from "react";
 import { Carousel } from "react-bootstrap";
+import { Helmet } from 'react-helmet';
+import SectionFour from "../components/user/sectionfour";
+import Portfolio from "../components/user/portfolio";
+import OurTeam from "../components/user/ourteam";
+import GetQuote from "../components/user/getquote";
 
 export default function AboutUs() {
+  const container = useRef(null);
+
+  const scroll = (scrollOffset) => {
+    container.current.scrollLeft += scrollOffset;
+  };
   return (
     <Fragment>
-      <Layout title="About Us - Landing">
-        <div id="about">
+    <Helmet>
+      <style>
+        {`
+          
+          .navbar-light{
+            background: #fff !important;
+          }
+          .navbar-light .navbar-nav .nav-link{
+            color: black !important;
+          }
+          .nav-link, .navbar {
+            padding: 0.5rem 0rem;
+            width: 90%;
+            margin: auto;
+          }
+          #footer{
+            margin-top: 0;
+          }
+          .motor_type{
+            background: #F8FFF9;
+          }
+
+        `}
+      </style>
+    </Helmet>
+      
+      <Layout title="About Us - Landing" whatsapp='whatsapp'>
+        <div id="index">
           <div className="d1">
-            <span className="sp1">
-              <h1>TAHARISH SYNERGY SERVICES LIMITED</h1>
-              <p>VEHICLES SERVICES, REPAIRS, AND MAINTENANCE</p>
-            </span>
-            <span className="sp2">
-              <p>
-                {" "}
-                Tahaish Synergy Services Limited is a leading provider of
-                vehicle services, repairs and maintenace in Nigeria. Established
-                in 2015, we have built a reputation for delivering exceptional
-                automotive solutions to our customers.
-              </p>
-            </span>
+            <h1 className="poppins">ABOUT US</h1>
+            <p className="p1 poppins">Umatched Excellence in Car Sales & Repairs “Discover Luxury, Eperience Performance, Uncompromising Quality”</p>
+
+            <div className="d1">
+              <Link href="/automobile">
+                <span style={{ cursor: "pointer" }}>
+                  <p className="poppins">Get A Quote Today
+                  </p>
+                </span>
+              </Link>
+            </div>
           </div>
           <div className="d2">
-            <Carousel controls={false}>
+            {/* <Carousel controls={false}>
               <Carousel.Item interval={2500}>
-                <img
-                  className="blur-up lazyload bg-img land-image-slider"
-                  src="/images/rangerover.jpg"
-                  alt="taharish"
-                  title="taharish"
-                  style={{
-                    width: "100%",
-                    height: "60vh!important",
-                    objectFit: "cover",
-                  }}
-                />
+                <img src="/images/range.png" />
               </Carousel.Item>
               <Carousel.Item interval={2500}>
-                <img
-                  className="blur-up lazyload bg-img land-image-slider"
-                  src="/images/rangerover2.jpg"
-                  alt="taharish"
-                  title="taharish"
-                  style={{
-                    width: "100%",
-                    height: "60vh!important",
-                    objectFit: "cover",
-                  }}
-                />
+                <img src="/images/cari.png" />
               </Carousel.Item>
               <Carousel.Item interval={2500}>
-                <img
-                  className="blur-up lazyload bg-img land-image-slider"
-                  src="/images/car2.jpg"
-                  alt="taharish"
-                  title="taharish"
-                  style={{
-                    width: "100%",
-                    height: "60vh!important",
-                    objectFit: "cover",
-                  }}
-                />
+                <img src="/images/range2.png" />
               </Carousel.Item>
-            </Carousel>
-          </div>
-          <div className="d3">
-            <span className="sp1">
-              <h1>Our&nbsp;Experience</h1>
-            </span>
-            <span className="sp2">
-              <p>
-                We have been serving customers for several years and has a solid
-                experience in providing a wide range of automotive repair and
-                maintenance services with a focus on customer satisfaction and
-                using technology.
-              </p>
-            </span>
-          </div>
-
-          <div className="d4">
-            <h1>Our&nbsp;Services</h1>
-            <ul>
-              <li>Car sales</li>
-              <li>Vehicle Inspection</li>
-              <li>Mechanical Repairs</li>
-              <li>Electrical Repairs</li>
-              <li>Wheel Services</li>
-              <li>Exhaust Systems</li>
-              <li>Brake Systems</li>
-              <li>Engine Overhaul and Replacement</li>
-              <li>Transmission Overhauling and Replacement</li>
-              <li>Transmission Overhaul and Repacement</li>
-              <li>Heat, Ventilation, Air condition (H-VAC) Services</li>
-            </ul>
+              <Carousel.Item interval={2500}> */}
+                <img src="/images/about_section1.png" alt="About us" />
+              {/* </Carousel.Item>
+            </Carousel> */}
           </div>
         </div>
+        <div className="motor_type">
+          
+        <div className="previos" onClick={() => scroll(-20)}>
+          <img  src="/images/prev.png" alt="prev" />
+        </div>
+        <div className="next" onClick={() => scroll(20)}>
+          <img src="/images/nxt.png" alt="nxt" />
+        </div>
+        <div className="partner" ref={container}>
+            <div className="">
+              <img className="" src="/images/Trello-logo.png"  />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner1.png"  />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner2.png"  />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner3.png"  />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner4.png"  />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner5.png"  />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner6.png"  />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner7.png"  />
+            </div>
+        </div>
+        </div>
+
+
+        <div className="about_section">
+            <div>
+              <h2 className="poppins about_title">ABOUT US</h2>
+              <p className="poppins about_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <div className="min_body">
+                <p className="poppins about_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+            <div className="about_image_container">
+              <img src="/images/aboutcolorimage.png" alt="About " />
+              <img src="/images/aboutimage.png" alt="About" className="aboslute_image" />
+
+            </div>
+        </div>
+
+        
+        <div className="about_section reverse_flex">
+            <div>
+              <h2 className="poppins about_title">OUR MISSION</h2>
+              <p className="poppins about_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <div className="min_body">
+                <p className="poppins about_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+            <div className="about_image_container">
+              <img src="/images/missioncolorimage.png" alt="mission " />
+              <img src="/images/missionimage.png" alt="mission" className="aboslute_image" />
+
+            </div>
+        </div>
+
+        
+        <div className="about_section">
+            <div>
+              <h2 className="poppins about_title">OUR VISION</h2>
+              <p className="poppins about_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <div className="min_body">
+                <p className="poppins about_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+            <div className="about_image_container">
+              <img src="/images/visioncolorimage.png" alt="vision " />
+              <img src="/images/visionimage.png" alt="vision" className="aboslute_image" />
+
+            </div>
+        </div>
+
+        
+        <div className="about_section reverse_flex">
+            <div>
+              <h2 className="poppins about_title">OUR CORE VALUES</h2>
+              <p className="poppins about_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <div className="min_body">
+                <p className="poppins about_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+            <div className="about_image_container">
+              <img src="/images/valuecolorimage.png" alt="value " />
+              <img src="/images/valueimage.png" alt="value" className="aboslute_image" />
+
+            </div>
+        </div>
+
+
+        <div className="about_section custom_mb">
+            <div>
+              <h2 className="poppins about_title">OUR GUARANTEE</h2>
+              <p className="poppins about_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <div className="min_body">
+                <p className="poppins about_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+            <div className="about_image_container">
+              <img src="/images/guaranteecolorimage.png" alt="guarantee " />
+              <img src="/images/guaranteeimage.png" alt="guarantee" className="aboslute_image" />
+
+            </div>
+        </div>
+
+        <SectionFour />
+        <Portfolio />
+        <OurTeam />
+        <GetQuote />
       </Layout>
     </Fragment>
   );

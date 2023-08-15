@@ -13,197 +13,315 @@ exports.modules = {
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1664);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2791);
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_2__);
 
 
-function Footer() {
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("footer", {
+
+function Footer({ whatsapp  }) {
+    return(// <footer id="footer">
+    //   <div className="site-footer">
+    //     <div className="container">
+    //       {/* <!--Footer Links--> */}
+    //       <div className="footer-top">
+    //         <div className="row">
+    //           <div className="col-12 col-sm-12 col-md-3 col-lg-3">
+    //             <h4 className="h4">Quick Link</h4>
+    //             <ul>
+    //               <li>
+    //                 <Link href="/">Home</Link>
+    //               </li>
+    //               <li>
+    //                 <Link href="/about">About Us</Link>
+    //               </li>
+    //               <li>
+    //                 <Link href="/contact">Contact Us</Link>
+    //               </li>
+    //               <li>
+    //                 <Link href="/contact">Car Shop</Link>
+    //               </li>
+    //               <li>
+    //                 <Link href="/blog">Blogs</Link>
+    //               </li>
+    //             </ul>
+    //           </div>
+    //           <div className="col-12 col-sm-12 col-md-3 col-lg-3">
+    //             <h4 className="h4">Services</h4>
+    //             <ul>
+    //               <li>
+    //                 <Link href="/automobile">Car Sales</Link>
+    //               </li>
+    //               <li>Car Rentals</li>
+    //               <li>Car Detailing/ Car Wash</li>
+    //               <li>Car Servicing & Repairs</li>
+    //             </ul>
+    //           </div>
+    //           <div className="col-12 col-sm-12 col-md-3 col-lg-3 contact-box">
+    //             <h4 className="h4">Contact Us</h4>
+    //             <ul className="addressFooter">
+    //               <li>
+    //                 <i className="icon anm anm-map-marker-al"></i>
+    //                 <p>
+    //                   <b>HEAD OFFICE: </b>
+    //                   <em>
+    //                     Road 1907, Katampe District, Plot 14, Adjacent jabs
+    //                     Luxury Homes, FCT, Abuja
+    //                   </em>
+    //                 </p>
+    //                 <p>
+    //                   <b>BRANCH OFFICE: </b>
+    //                   <em>
+    //                     Plot 556, Katampe Road, Opposite Harmony Court Estate,
+    //                     jahi 9000108, Abuja
+    //                   </em>
+    //                   <br />
+    //                   Lagos, Nigeria
+    //                 </p>
+    //               </li>
+    //               <li className="phone">
+    //                 <i className="icon anm anm-phone-s"> </i>
+    //                 <Link href="tel:234 8139337963">
+    //                   <p style={{ cursor: "pointer" }}> 08139337963(head)</p>
+    //                 </Link>
+    //               </li>
+    //               <li>
+    //                 <i className="icon anm anm-phone-s"> </i>
+    //                 <Link href="tel:234 8136869671">
+    //                   <p style={{ cursor: "pointer" }}> 08136869671(head)</p>
+    //                 </Link>
+    //               </li>
+    //               <li>
+    //                 <i className="icon anm anm-phone-s"> </i>
+    //                 <Link href="tel:234 8035379572">
+    //                   <p style={{ cursor: "pointer" }}> 08035379572(branch)</p>
+    //                 </Link>
+    //               </li>
+    //               <li className="email">
+    //                 <i className="icon anm anm-envelope-l"> </i>
+    //                 <Link href="mailto: taharishautomobileservices@gmail.com">
+    //                   <p style={{ cursor: "pointer" }}>
+    //                     taharishautomobileservices@gmail.com
+    //                   </p>
+    //                 </Link>
+    //               </li>
+    //             </ul>
+    //           </div>
+    //         </div>
+    //       </div>
+    //       {/* <!--End Footer Links--> */}
+    //       <hr />
+    //       <div className="footer-bottom">
+    //         <div className="row">
+    //           {/* <!--Footer Copyright--> */}
+    //           <div className="col-12 col-sm-12 col-md-6 col-lg-6 order-1 order-md-0 order-lg-0 order-sm-1 copyright text-sm-center text-md-left text-lg-left"></div>
+    //           {/* <!--End Footer Copyright--> */}
+    //           {/* <!--Footer Payment Icon--> */}
+    //           <div className="col-12 col-sm-12 col-md-6 col-lg-6 order-0 order-md-1 order-lg-1 order-sm-0 payment-icons text-right text-md-center">
+    //             <ul className="payment-icons list--inline">
+    //               <li>
+    //                 <i className="icon fa fa-cc-visa" aria-hidden="true"></i>
+    //               </li>
+    //               <li>
+    //                 <i
+    //                   className="icon fa fa-cc-mastercard"
+    //                   aria-hidden="true"
+    //                 ></i>
+    //               </li>
+    //               <li>
+    //                 <i
+    //                   className="icon fa fa-cc-discover"
+    //                   aria-hidden="true"
+    //                 ></i>
+    //               </li>
+    //               <li>
+    //                 <i className="icon fa fa-cc-paypal" aria-hidden="true"></i>
+    //               </li>
+    //               <li>
+    //                 <i className="icon fa fa-cc-amex" aria-hidden="true"></i>
+    //               </li>
+    //               <li>
+    //                 <i
+    //                   className="icon fa fa-credit-card"
+    //                   aria-hidden="true"
+    //                 ></i>
+    //               </li>
+    //             </ul>
+    //           </div>
+    //           <div className="text-center" style={{ color: "green" }}>
+    //             Powered by BUZZT & mgenius
+    //           </div>
+    //           {/* <!--End Footer Payment Icon--> */}
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </footer>
+    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("footer", {
         id: "footer",
-        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-            className: "site-footer",
-            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "container",
+        children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_helmet__WEBPACK_IMPORTED_MODULE_2__.Helmet, {
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("style", {
+                    children: `
+          .site-footer {
+            background: #00CA72;
+            position: relative;
+          }
+          .footer-top{
+            color: black;
+          }
+          .footer-top h4, .footer-top .h4{
+            color: black;
+          }
+          #footer a {
+            color: black;
+          }
+          .site-footer ul li {
+            margin-bottom: 20px;
+          }
+          .footer-top p{
+            color: black;
+          }
+          .addressFooter li p {
+            padding-left: 0px;
+          }
+        `
+                })
+            }),
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: "site-footer",
                 children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "footer-top",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "row",
-                            children: [
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "col-12 col-sm-12 col-md-3 col-lg-3",
+                    whatsapp && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                        href: "https://wa.me/+2348035379572",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                            src: "/images/whatsapp.png",
+                            alt: "whatsapp",
+                            className: "footerwhatsapp"
+                        })
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: "container",
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "footer-top",
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: "row footer_row",
                                     children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
-                                            className: "h4",
-                                            children: "Quick Link"
-                                        }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: "col-12 mb-4 col-sm-12 col-md-3 col-lg-3",
                                             children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                                        href: "/",
-                                                        children: "Home"
-                                                    })
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                    src: "/images/taharish-automobile.png",
+                                                    alt: "logo",
+                                                    className: "mb-4"
                                                 }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                                        href: "/about",
-                                                        children: "About Us"
-                                                    })
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                    className: "footer_text",
+                                                    children: "Umatched Excellence in Car Sales & Repairs \u201CDiscover Luxury, Eperience Performance, Uncompromising Quality\u201D"
                                                 }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                                        href: "/contact",
+                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                    className: "handles",
+                                                    children: [
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                            src: "/images/face.png",
+                                                            alt: "facebook handle"
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                            src: "/images/twit.png",
+                                                            alt: "facebook handle"
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                            src: "/images/link.png",
+                                                            alt: "facebook handle"
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                            src: "/images/inst.png",
+                                                            alt: "facebook handle"
+                                                        })
+                                                    ]
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: "col-12 mb-4 col-sm-12 col-md-3 col-lg-3",
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
+                                                    className: "h4 poppins",
+                                                    children: "Quick Link"
+                                                }),
+                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                                    children: [
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                                href: "/",
+                                                                children: "Home"
+                                                            })
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                                href: "/about",
+                                                                children: "About Us"
+                                                            })
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                                href: "/contact",
+                                                                children: "Contact Us"
+                                                            })
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                                href: "/contact",
+                                                                children: "Car Shop"
+                                                            })
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                                href: "/blog",
+                                                                children: "Blogs"
+                                                            })
+                                                        })
+                                                    ]
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: "col-12 mb-4 col-sm-12 col-md-3 col-lg-3 contact-box",
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
+                                                    className: "h4 mb-1 poppins",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("b", {
                                                         children: "Contact Us"
                                                     })
                                                 }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                                        href: "/contact",
-                                                        children: "Car Shop"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                                        href: "/blog",
-                                                        children: "Blogs"
-                                                    })
-                                                })
-                                            ]
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "col-12 col-sm-12 col-md-3 col-lg-3",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
-                                            className: "h4",
-                                            children: "Services"
-                                        }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                                            children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                                        href: "/automobile",
-                                                        children: "Car Sales"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                    children: "Car Rentals"
-                                                }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                    children: "Car Detailing/ Car Wash"
-                                                }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                    children: "Car Servicing & Repairs"
-                                                })
-                                            ]
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "col-12 col-sm-12 col-md-3 col-lg-3 contact-box",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
-                                            className: "h4",
-                                            children: "Contact Us"
-                                        }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                                            className: "addressFooter",
-                                            children: [
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                                    className: "addressFooter",
                                                     children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                            className: "icon anm anm-map-marker-al"
-                                                        }),
-                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                                            children: [
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("b", {
-                                                                    children: "HEAD OFFICE: "
-                                                                }),
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("em", {
-                                                                    children: "Road 1907, Katampe District, Plot 14, Adjacent jabs Luxury Homes, FCT, Abuja"
-                                                                })
-                                                            ]
-                                                        }),
-                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                                            children: [
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("b", {
-                                                                    children: "BRANCH OFFICE: "
-                                                                }),
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("em", {
-                                                                    children: "Plot 556, Katampe Road, Opposite Harmony Court Estate, jahi 9000108, Abuja"
-                                                                }),
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                                                                "Lagos, Nigeria"
-                                                            ]
-                                                        })
-                                                    ]
-                                                }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                                    className: "phone",
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                            className: "icon anm anm-phone-s",
-                                                            children: " "
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                                            href: "tel:234 8139337963",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                                style: {
-                                                                    cursor: "pointer"
-                                                                },
-                                                                children: " 08139337963(head)"
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                                                                children: [
+                                                                    "BRANCH OFFICE: Plot 556, Katampe Road, Opposite Harmony Court Estate, jahi 9000108, Abuja",
+                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                                                                    "Lagos, Nigeria"
+                                                                ]
                                                             })
-                                                        })
-                                                    ]
-                                                }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                            className: "icon anm anm-phone-s",
-                                                            children: " "
                                                         }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                                            href: "tel:234 8136869671",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                                style: {
-                                                                    cursor: "pointer"
-                                                                },
-                                                                children: " 08136869671(head)"
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
+                                                            className: "h4 poppins mb-1",
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("b", {
+                                                                children: "Phone Number"
                                                             })
-                                                        })
-                                                    ]
-                                                }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                            className: "icon anm anm-phone-s",
-                                                            children: " "
                                                         }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                                            href: "tel:234 8035379572",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                                style: {
-                                                                    cursor: "pointer"
-                                                                },
-                                                                children: " 08035379572(branch)"
-                                                            })
-                                                        })
-                                                    ]
-                                                }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                                    className: "email",
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                            className: "icon anm anm-envelope-l",
-                                                            children: " "
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                                            href: "mailto: taharishautomobileservices@gmail.com",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                                style: {
-                                                                    cursor: "pointer"
-                                                                },
-                                                                children: "taharishautomobileservices@gmail.com"
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                                                                className: "poppins",
+                                                                children: [
+                                                                    "+2348035379572",
+                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                                                                    "+2348139337963"
+                                                                ]
                                                             })
                                                         })
                                                     ]
@@ -212,76 +330,26 @@ function Footer() {
                                         })
                                     ]
                                 })
-                            ]
-                        })
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("hr", {}),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "footer-bottom",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "row",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "col-12 col-sm-12 col-md-6 col-lg-6 order-1 order-md-0 order-lg-0 order-sm-1 copyright text-sm-center text-md-left text-lg-left"
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "col-12 col-sm-12 col-md-6 col-lg-6 order-0 order-md-1 order-lg-1 order-sm-0 payment-icons text-right text-md-center",
-                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                                        className: "payment-icons list--inline",
-                                        children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                    className: "icon fa fa-cc-visa",
-                                                    "aria-hidden": "true"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                    className: "icon fa fa-cc-mastercard",
-                                                    "aria-hidden": "true"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                    className: "icon fa fa-cc-discover",
-                                                    "aria-hidden": "true"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                    className: "icon fa fa-cc-paypal",
-                                                    "aria-hidden": "true"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                    className: "icon fa fa-cc-amex",
-                                                    "aria-hidden": "true"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                    className: "icon fa fa-credit-card",
-                                                    "aria-hidden": "true"
-                                                })
-                                            })
-                                        ]
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "footer-bottom",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: "row",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: "text-center poppins",
+                                        style: {
+                                            color: "black"
+                                        },
+                                        children: "Copyright Taharish Automobile 2023"
                                     })
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "text-center",
-                                    style: {
-                                        color: "green"
-                                    },
-                                    children: "Powered by BUZZT & mgenius"
                                 })
-                            ]
-                        })
+                            })
+                        ]
                     })
                 ]
             })
-        })
-    });
+        ]
+    }));
 };
 
 
@@ -311,7 +379,7 @@ react_toastify__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.th
 
 
 
-function Layout({ title , children  }) {
+function Layout({ whatsapp , title , children  }) {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
         children: [
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {
@@ -349,7 +417,9 @@ function Layout({ title , children  }) {
                 className: "pageWrapper",
                 children: children
             }),
-            title == "Login" ? null : title == "Register" ? null : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Footer__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {})
+            title == "Login" ? null : title == "Register" ? null : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Footer__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+                whatsapp: whatsapp
+            })
         ]
     });
 };
@@ -461,6 +531,7 @@ function MainHeader() {
         let out = (0,logout/* default */.Z)();
         if (out) router.push("/login");
     };
+    console.log(user);
     return(//  <!--Header-->
     /*#__PURE__*/ jsx_runtime_.jsx(external_react_.Fragment, {
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Navbar, {
@@ -469,9 +540,10 @@ function MainHeader() {
             children: [
                 /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Navbar.Brand, {
                     href: "/",
+                    className: "nav_brand",
                     children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                        src: "/images/tahicon.png",
-                        width: "60",
+                        src: "/images/taharish-automobile.png",
+                        width: "150",
                         className: "d-inline-block align-top",
                         alt: "Logo"
                     })
@@ -483,7 +555,7 @@ function MainHeader() {
                     id: "navbar-nav",
                     children: [
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Nav, {
-                            className: "mr-auto",
+                            className: "ml-auto",
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Nav.Link, {
                                     href: "/",
@@ -499,11 +571,6 @@ function MainHeader() {
                                     href: "/contact",
                                     className: "text-uppercase mx-3",
                                     children: "Contact Us"
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Nav.Link, {
-                                    href: "/blog",
-                                    className: "text-uppercase mx-3",
-                                    children: "Blog"
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Nav.Link, {
                                     href: "/automobile",
@@ -522,23 +589,25 @@ function MainHeader() {
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                     className: "container-fluid",
                                     children: /*#__PURE__*/ jsx_runtime_.jsx("ul", {
-                                        className: "navbar-nav",
-                                        style: {
-                                            position: "absolute",
-                                            right: "0px"
-                                        },
+                                        className: `navbar-nav ${user?.admin == "yes" ? " adminNav" : " userNav"}`,
                                         children: !Object.keys(user).length ? /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                            className: "account_signing",
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                                     href: "/login",
                                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("small", {
                                                         style: {
                                                             fontSize: "15px",
+                                                            cursor: "pointer",
+                                                            border: "1px solid #20B15A",
+                                                            padding: "7px 12px",
+                                                            color: "black",
+                                                            borderRadius: "7px",
                                                             cursor: "pointer"
                                                         },
                                                         children: [
                                                             " ",
-                                                            "sign in",
+                                                            "Login",
                                                             " "
                                                         ]
                                                     })
@@ -547,17 +616,19 @@ function MainHeader() {
                                                     href: "register",
                                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("small", {
                                                         style: {
-                                                            backgroundColor: "black",
-                                                            color: "white",
-                                                            padding: "2px",
                                                             fontSize: "15px",
                                                             cursor: "pointer",
-                                                            borderRadius: "3px"
+                                                            border: "1px solid #20B15A",
+                                                            background: "#20B15A",
+                                                            padding: "7px 12px",
+                                                            color: "white",
+                                                            borderRadius: "7px",
+                                                            cursor: "pointer"
                                                         },
                                                         className: "d-sm-inline",
                                                         children: [
                                                             " ",
-                                                            "sign\xa0up",
+                                                            "Register",
                                                             " "
                                                         ]
                                                     })
@@ -581,7 +652,7 @@ function MainHeader() {
                                                             borderRadius: "50%",
                                                             padding: "3px"
                                                         },
-                                                        children: (0,stringManipulation/* getInitials */.Q)(user?.firstName, user?.lastName)
+                                                        children: (0,stringManipulation/* getInitials */.Q)(user?.fullName)
                                                     })
                                                 }),
                                                 avatarMenu ? /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {

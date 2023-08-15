@@ -1,28 +1,59 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
-import React, { Fragment } from "react";
+import React, { Fragment, useRef } from "react";
 import { Carousel } from "react-bootstrap";
+import { Helmet } from 'react-helmet';
+import WhatWeDo from "../components/user/whatwedo";
+import WhyChooseUs from "../components/user/whychooseus";
+import SectionFour from "../components/user/sectionfour";
+import Portfolio from "../components/user/portfolio";
+import OurShop from "../components/user/ourshop";
+import Testimonia from "../components/user/testimonia";
+import OurTeam from "../components/user/ourteam";
+import GetQuote from "../components/user/getquote";
 
 export default function Home() {
+  const container = useRef(null);
+
+  const scroll = (scrollOffset) => {
+    container.current.scrollLeft += scrollOffset;
+  };
   return (
     <Fragment>
-      <Layout title="Landing">
+      <Helmet>
+        <style>
+          {`
+            #__next {
+              background: #D7F5DC !important;
+            }
+            .navbar-light{
+              background: #D7F5DC !important;
+            }
+            .navbar-light .navbar-nav .nav-link{
+              color: black !important;
+            }
+            .nav-link, .navbar {
+              padding: 0.5rem 0rem;
+              width: 90%;
+              margin: auto;
+            }
+            #footer{
+              margin-top: 0;
+            }
+
+          `}
+        </style>
+      </Helmet>
+      <Layout title="Landing" whatsapp="whatsapp">
         <div id="index">
           <div className="d1">
-            <h1>
-              <b style={{ color: "green" }}>Taharish Automobile</b>: Unmatched
-              Excellence in Car Sales & Repairs
-            </h1>
-            <p className="p1">
-              &quot;Discover Luxury. Experience Performance. Uncompromising
-              Quality.&quot;
-            </p>
+            <h1 className="poppins">Taharish Automobile</h1>
+            <p className="p1 poppins">Umatched Excellence in Car Sales & Repairs “Discover Luxury, Eperience Performance, Uncompromising Quality”</p>
 
             <div className="d1">
               <Link href="/automobile">
                 <span style={{ cursor: "pointer" }}>
-                  <p>
-                    <em>Get Your Dream Car</em>
+                  <p className="poppins">Get Your Dream Car
                   </p>
                 </span>
               </Link>
@@ -45,6 +76,53 @@ export default function Home() {
             </Carousel>
           </div>
         </div>
+        <div className="motor_type">
+          
+        <div className="previos" onClick={() => scroll(-20)}>
+          <img  src="/images/prev.png" alt="prev" />
+        </div>
+        <div className="next" onClick={() => scroll(20)}>
+          <img src="/images/nxt.png" alt="nxt" />
+        </div>
+        <div className="partner" ref={container}>
+            <div className="">
+              <img className="" src="/images/Trello-logo.png"  />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner1.png"  />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner2.png"  />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner3.png"  />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner4.png"  />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner5.png"  />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner6.png"  />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner7.png"  />
+            </div>
+        </div>
+        </div>
+
+
+        <WhatWeDo />
+        <WhyChooseUs />
+        <SectionFour />
+        <Portfolio />
+        <OurShop />
+        <Testimonia />
+        <OurTeam />
+        <GetQuote />
+
+        
       </Layout>
     </Fragment>
   );

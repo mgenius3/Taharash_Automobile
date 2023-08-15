@@ -3,7 +3,7 @@ import { ToastContainer } from "react-toastify";
 import MainNav from "./mainNav/Nav";
 import Footer from "./Footer";
 import { Fragment } from "react";
-export default function Layout({ title, children }) {
+export default function Layout({ whatsapp, title, children }) {
   return (
     <Fragment>
       <Head>
@@ -28,7 +28,7 @@ export default function Layout({ title, children }) {
       )} */}
       {title == "Login" ? null : title == "Register" ? null : <MainNav />}
       <div className="pageWrapper">{children}</div>
-      {title == "Login" ? null : title == "Register" ? null : <Footer />}
+      {title == "Login" ? null : title == "Register" ? null : <Footer whatsapp={whatsapp} />}
     </Fragment>
   );
 }

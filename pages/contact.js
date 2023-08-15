@@ -5,6 +5,7 @@ import React, { Fragment, useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import FetchApiClient from "../fetch_api_clients/api";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   let apiClient = new FetchApiClient("/user");
@@ -29,9 +30,44 @@ export default function Home() {
   };
   return (
     <Fragment>
-      <Layout title="Contact Us - Landing">
+      <Helmet>
+        <style>
+          {`
+          @media only screen and (max-width: 767px) {
+            #index {
+              margin: 10px;
+            }
+            .d1{
+              display: none;
+            }
+          }
+          .container {
+            margin-top: 50px;
+          }
+          .navbar-light{
+            background: #fff !important;
+          }
+          .navbar-light .navbar-nav .nav-link{
+            color: black !important;
+          }
+          .nav-link, .navbar {
+            padding: 0.5rem 0rem;
+            width: 90%;
+            margin: auto;
+          }
+          #footer{
+            margin-top: 0;
+          }
+          .motor_type{
+            background: #F8FFF9;
+          }
+
+        `}
+        </style>
+      </Helmet>
+      <Layout title="Contact">
         <div id="page-content">
-          <div
+          {/* <div
             className="page section-header text-center"
             style={{ margin: "60px 0px" }}
           >
@@ -49,25 +85,37 @@ export default function Home() {
               <span aria-hidden="true">›</span>
               <span>Contact Us</span>
             </div>
-          </div>{" "}
+          </div>{" "} */}
           <div className="container">
             <div className="row">
-              <div className="col-12 col-sm-12 col-md-8 col-lg-8 mb-4">
-                <h2>Drop Us A Line</h2>
-                <p>
-                  You can reach us through a telephone call or send message
-                  below{" "}
+              <div className="col-12 mb-4">
+                <h2 className="poppins login mb-4">
+                  <b className="poppins">CONTACT US</b>
+                </h2>
+
+                <p className="poppins contact_body login mb-5">
+                  {" "}
+                  <span className="privacy">
+                    Fill up the form our team will get back to you in 24hrs
+                  </span>
                 </p>
                 <div className="formFeilds contact-form form-vertical">
                   <form className="contact-form">
                     <div className="row">
                       <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                         <div className="form-group">
+                          <label
+                            className="black poppins"
+                            htmlFor="CustomerEmail"
+                          >
+                            First Name{" "}
+                          </label>
                           <input
                             type="text"
                             id="ContactFormName"
-                            name="fullName"
+                            name="firstName"
                             placeholder="Name"
+                            className="login_input"
                             required
                             onChange={handleInputChange}
                           />
@@ -75,11 +123,18 @@ export default function Home() {
                       </div>
                       <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                         <div className="form-group">
+                          <label
+                            className="black poppins"
+                            htmlFor="CustomerEmail"
+                          >
+                            Last Name
+                          </label>
                           <input
-                            type="email"
-                            id="ContactFormEmail"
-                            name="email"
-                            placeholder="Email"
+                            type="text"
+                            id="ContactFormName"
+                            name="lastName"
+                            placeholder="Name"
+                            className="login_input"
                             required
                             onChange={handleInputChange}
                           />
@@ -89,27 +144,79 @@ export default function Home() {
                     <div className="row">
                       <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                         <div className="form-group">
+                          <label
+                            className="black poppins"
+                            htmlFor="CustomerEmail"
+                          >
+                            Email Address
+                          </label>
+                          <input
+                            type="email"
+                            id="ContactFormEmail"
+                            name="email"
+                            placeholder="Your email address"
+                            className="login_input"
+                            required
+                            onChange={handleInputChange}
+                          />
+                        </div>
+                      </div>
+                      <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div className="form-group">
+                          <label
+                            className="black poppins"
+                            htmlFor="CustomerEmail"
+                          >
+                            Phone Number
+                          </label>
                           <input
                             required
                             type="tel"
                             id="ContactFormPhone"
                             name="telephone"
                             pattern="[0-9\-]*"
-                            placeholder="Phone Number"
+                            placeholder="Your phone number"
+                            className="login_input"
                             onChange={handleInputChange}
                           />
                         </div>
                       </div>
                     </div>
                     <div className="row">
-                      <div className="col-12 col-sm-12 col-md-12 col-lg-12">
+                      <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                         <div className="form-group">
+                          <label
+                            className="black poppins"
+                            htmlFor="CustomerEmail"
+                          >
+                            What Service Do You Need? *
+                          </label>
+                          <textarea
+                            required=""
+                            rows="10"
+                            id="ContactFormMessage"
+                            name="services"
+                            placeholder="Your Message"
+                            className="login_input"
+                            onChange={handleInputChange}
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div className="form-group">
+                          <label
+                            className="black poppins"
+                            htmlFor="CustomerEmail"
+                          >
+                            Message
+                          </label>
                           <textarea
                             required=""
                             rows="10"
                             id="ContactFormMessage"
                             name="message"
                             placeholder="Your Message"
+                            className="login_input"
                             onChange={handleInputChange}
                           ></textarea>
                         </div>
@@ -120,14 +227,14 @@ export default function Home() {
                         {isLoading ? (
                           <input
                             type="submit"
-                            className="btn"
+                            className="btn act_btn mt-5"
                             value="loading ..."
                             disabled
                           />
                         ) : (
                           <input
                             type="submit"
-                            className="btn"
+                            className="btn act_btn mt-5"
                             value="Send Message"
                             onClick={submitPackageMessage}
                           />
@@ -137,7 +244,7 @@ export default function Home() {
                   </form>
                 </div>
               </div>
-              <div className="col-12 col-sm-12 col-md-4 col-lg-4">
+              {/* <div className="col-12 col-sm-12 col-md-4 col-lg-4">
                 <div className="open-hours">
                   <strong>Opening Hours</strong>
                   <br />
@@ -176,10 +283,10 @@ export default function Home() {
                   </li>
                 </ul>
                 <hr />
-              </div>
+              </div> */}
             </div>
           </div>
-          <div className="map-section map">
+          {/* <div className="map-section map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.519720740185!2d7.451123000000007!3d9.107440200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0aa5d4258e9b%3A0x51f4be49b234fa61!2s1907%20Katampe%20Rd%2C%20Kado%20900108%2C%20Abuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1687368391108!5m2!1sen!2sng"
               width="600"
@@ -224,7 +331,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </Layout>
     </Fragment>

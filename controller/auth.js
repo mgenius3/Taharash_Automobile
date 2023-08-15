@@ -19,21 +19,23 @@ const RegisterNewUser = async (req, res) => {
     const { password } = req.body;
     //     let encryptedPassword = await bcrypt.hash(password, 10);
     let encryptedPassword = password;
+
     //PASSWORD ENCRYPTION
     req.body.password = encryptedPassword;
     let new_user_id = await registerUser(req.body);
 
     let [user] = await getUser(new_user_id);
 
+    // console.log(user);
+
     //CREATE TOKEN
     const token = jwt.sign(
       {
         id: user.id,
         email: user.email,
-        telephone: user.telephone,
-        address: user.address,
-        firstName: user.firstName,
-        lastName: user.lastName,
+        // telephone: user.telephone,
+        // address: user.address,
+        fullName: user.name,
         admin: user.admin,
       },
       process.env.TOKEN_KEY,
@@ -62,16 +64,17 @@ const LoginUser = async (req, res) => {
     } else {
       let [user] = await getUserByEmail(email);
 
+      console.log(user);
+
       if (user && password == user.password) {
         //CREATE TOKEN
         const token = jwt.sign(
           {
             id: user.id,
             email: user.email,
-            telephone: user.telephone,
-            address: user.address,
-            firstName: user.firstName,
-            lastName: user.lastName,
+            // telephone: user.telephone,
+            // address: user.address,
+            fullName: user.name,
             admin: user.admin,
           },
           process.env.TOKEN_KEY,

@@ -1266,6 +1266,40 @@
   #footer .addressFooter li:last-of-type {
     padding-bottom: 0;
   }
+  .section4 {
+    width: 90%;
+    flex-direction: column;
+  }
+  .section4 > div {
+    border-right: 0 !important;
+    border-bottom: 1px solid #C4C4C480;
+  }
+  .quote_input {
+    width: 80% !important;
+  }
+  .portfolio > div {
+    width: 100% !important;
+  }
+  .about_section {
+    flex-direction: column-reverse;
+  }
+  .about_section > div {
+    width: 90% !important;
+    padding: 0 !important;
+    margin-bottom: 20px;
+  }
+  .about_section > div > img {
+    width: 100% !important;
+  }
+  .aboslute_image {
+    display: none;
+  }
+  .about_title {
+    text-align: center;
+  }
+  .reverse_flex {
+    flex-direction: column-reverse !important;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -1550,5 +1584,34 @@
 
   #footer {
     margin-top: 20px;
+  }
+  .to_do_card {
+    width: 45vw !important;
+  }
+  .motor_type > div {
+    width: 100px;
+    flex-shrink: 0;
+  }
+  .what_we_do, .what_to_do_card, .testimonial_section {
+    text-align: center;
+}
+.prev {
+  padding: 7px !important;
+  height: 2rem !important;
+  width: 2rem !important;
+}
+.footerwhatsapp {
+  position: absolute;
+  top: -6rem;
+  right: 1rem;
+  width: 5rem;
+}
+.google_h2{
+  font-size: 10px;
+}
+}
+@media only screen and (min-width: 1004px) {
+  .custom_mb{
+    margin-top: 30px !important;
   }
 }

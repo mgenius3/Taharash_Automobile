@@ -37,13 +37,13 @@
 }
 
 #index > .d1 > .d1 > span {
-  background: green;
+  background: #20B15A;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: 5px;
   padding: 17px 25px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: "pointer";
 }
 #index > .d1 > .d1 > span > p {

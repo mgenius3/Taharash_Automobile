@@ -11,7 +11,9 @@ const createTableContact = async () => {
       ? null
       : await connection.query(`CREATE TABLE contact (
       id INT NOT NULL AUTO_INCREMENT,
-      fullName VARCHAR(255) NOT NULL,
+      firstName VARCHAR(255) NOT NULL,
+      lastName VARCHAR(255) NOT NULL,
+      services VARCHAR(255) NOT NULL,
       email VARCHAR(255) NOT NULL,
       telephone VARCHAR(255) NOT NULL,
       message TEXT,
@@ -24,13 +26,15 @@ const createTableContact = async () => {
 };
 
 const newContactMessage = async (data) => {
-  const { fullName, email, telephone, message } = data;
+  const { firstName, lastName, services, email, telephone, message } = data;
   try {
     const connection = await pool.getConnection();
     await connection.beginTransaction();
-    const contact_query = `INSERT INTO contact (fullName, email, telephone, message ) VALUES (?, ?, ?, ?)`;
+    const contact_query = `INSERT INTO contact (firstName, lastName, services, email, telephone, message ) VALUES (?, ?, ?, ?, ?, ?)`;
     const new_contact_user = await pool.query(contact_query, [
-      fullName,
+      firstName,
+      lastName,
+      services,
       email,
       telephone,
       message,

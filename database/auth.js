@@ -27,12 +27,9 @@ const createTableUser = async () => {
       : await connection.query(`CREATE TABLE user (
       id INT NOT NULL AUTO_INCREMENT,
       admin VARCHAR(255) DEFAULT "no" ,
-      firstName VARCHAR(255) NOT NULL,
-      lastName VARCHAR(255) NOT NULL,
+      name VARCHAR(255) NOT NULL,
       email VARCHAR(255) NOT NULL,
       password VARCHAR(255) NOT NULL,
-      telephone VARCHAR(255) NOT NULL,
-      address VARCHAR(255) NOT NULL,
       token VARCHAR(1000) DEFAULT NULL,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       PRIMARY KEY (id),
@@ -46,23 +43,17 @@ const createTableUser = async () => {
 const registerUser = async ({
   email,
   password,
-  firstName,
-  lastName,
-  telephone,
-  address,
+  name,
   admin,
 }) => {
   try {
     const connection = await pool.getConnection();
     await connection.beginTransaction();
-    const register_query = `INSERT INTO user (email, password, firstName, lastName, telephone, address, admin) VALUES (?, ?, ?, ?, ?, ?, ?)`;
+    const register_query = `INSERT INTO user (email, password, name, admin) VALUES (?, ?, ?, ?)`;
     const new_registered_user = await pool.query(register_query, [
       email,
       password,
-      firstName,
-      lastName,
-      telephone,
-      address,
+      name,
       admin,
     ]);
     return new_registered_user[0].insertId;
