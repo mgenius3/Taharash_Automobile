@@ -652,7 +652,7 @@ function MainHeader() {
                                                             borderRadius: "50%",
                                                             padding: "3px 7px"
                                                         },
-                                                        children: (0,stringManipulation/* getInitials */.Q)(user?.fullName).toUpperCase()
+                                                        children: (0,stringManipulation/* getInitials */.Q)(user?.fullName)?.toUpperCase()
                                                     })
                                                 }),
                                                 avatarMenu ? /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {

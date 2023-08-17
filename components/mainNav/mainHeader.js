@@ -131,7 +131,7 @@ export default function MainHeader() {
                             padding: "3px 7px",
                           }}
                         >
-                          {getInitials(user?.fullName).toUpperCase()}
+                          {getInitials(user?.fullName)?.toUpperCase()}
                         </p>
                       </a>
                       {avatarMenu ? (
