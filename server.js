@@ -29,6 +29,18 @@ server.use("/serve/automobile", require("./routes/automobile"));
 server.use("/serve/user", require("./routes/auth"));
 server.use("/serve/admin", require("./routes/admin"));
 
+server.get("/sitemap.xml", (req, res) => {
+  const filePath = path.join(__dirname, "sitemap.xml");
+  fs.readFile(filePath, (err, data) => {
+    if (err) {
+      res.status(404).end();
+    } else {
+      res.setHeader("Content-Type", "application/xml");
+      res.send(data);
+    }
+  });
+});
+
 // error handling
 server.use(errorHandler);
 

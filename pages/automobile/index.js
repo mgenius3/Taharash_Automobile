@@ -74,7 +74,7 @@ export default function Shop() {
   }
 
   return (
-    <Layout title="Shop - Market">
+    <Layout title="Car Shop">
       <div className="market_search-input">
         <em
           style={{

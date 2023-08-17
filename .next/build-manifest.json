@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/MMLGlJJoRBGdCH3A3Ajqa/_buildManifest.js",
-    "static/MMLGlJJoRBGdCH3A3Ajqa/_ssgManifest.js"
+    "static/bP7_7zohv-kdSLG7OMqh6/_buildManifest.js",
+    "static/bP7_7zohv-kdSLG7OMqh6/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -80,7 +80,7 @@
       "static/chunks/715-18a45be9d5f64961.js",
       "static/chunks/917-aa49c019221d1c48.js",
       "static/chunks/708-d6f1364b35d185a3.js",
-      "static/chunks/pages/automobile-6b9e014d89d49d07.js"
+      "static/chunks/pages/automobile-ac3fc2945d8e7c16.js"
     ],
     "/automobile/[product]": [
       "static/chunks/webpack-cb7634a8b6194820.js",

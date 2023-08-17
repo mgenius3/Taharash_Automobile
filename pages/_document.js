@@ -17,6 +17,10 @@ class MyDocument extends Document {
           <link rel="stylesheet" href="/styles/plugins.css" />
           <link rel="stylesheet" href="/styles/responsive.css" />
           <link rel="stylesheet" href="/styles/shop.css" />
+          <meta
+            name="google-site-verification"
+            content="rTmtvezJFMi9_FqqVE6BYGYxacy46jaki46aqFP_q4k"
+          />
         </Head>
         <div
           id="modalOverly"
