@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Layout from "../components/Layout";
 import FetchApiClient from "../fetch_api_clients/api";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 export default function Login() {
   let apiClient = new FetchApiClient("/user");
@@ -27,8 +27,7 @@ export default function Login() {
     if (response) {
       localStorage.setItem("token", response);
       setIsLoading(false);
-      console.log("hello");
-      router.back();
+      router.push("/");
     } else {
       setIsLoading(false);
       toast.error(error);
@@ -37,9 +36,9 @@ export default function Login() {
 
   return (
     <Layout title="Signup">
-    <Helmet>
-      <style>
-        {`
+      <Helmet>
+        <style>
+          {`
           @media only screen and (max-width: 1023px) {
             #index {
               margin: 10px;
@@ -77,8 +76,8 @@ export default function Login() {
           }
 
         `}
-      </style>
-    </Helmet>
+        </style>
+      </Helmet>
       <div id="page-content">
         {/* <img
           src="/images/tahicon.png"
@@ -110,7 +109,9 @@ export default function Login() {
                       className="contact-form"
                       onSubmit={handleSubmit(submitLoginDetails)}
                     >
-                      <h2 className="poppins login mb-4"><b className="poppins">Log In</b></h2>
+                      <h2 className="poppins login mb-4">
+                        <b className="poppins">Log In</b>
+                      </h2>
                       <div className="row">
                         <div className="col-12 col-sm-12 col-md-12 col-lg-12">
                           <div className="form-group">
@@ -152,15 +153,23 @@ export default function Login() {
                               required
                               onChange={handleInputChange}
                             />
-                            <label htmlFor="checkboxfield mb-0 poppins">I  agree to all <span className="privacy">Term, Privacy Policy</span> and <span className="privacy">fees</span></label>
-                            
+                            <label htmlFor="checkboxfield mb-0 poppins">
+                              I agree to all{" "}
+                              <span className="privacy">
+                                Term, Privacy Policy
+                              </span>{" "}
+                              and <span className="privacy">fees</span>
+                            </label>
                           </div>
                         </div>
                       </div>
                       <div className="row">
                         <div className="text-center col-12 col-sm-12 col-md-12 col-lg-12">
                           {isLoading ? (
-                            <input value="loading..." className="btn act_btn mb-3"></input>
+                            <input
+                              value="loading..."
+                              className="btn act_btn mb-3"
+                            ></input>
                           ) : (
                             <input
                               type="submit"
@@ -170,15 +179,21 @@ export default function Login() {
                           )}
                           <p
                             className="mb-4 poppins"
-                            style={{ color: "black", cursor: "pointer", textAlign: 'start' }}
+                            style={{
+                              color: "black",
+                              cursor: "pointer",
+                              textAlign: "start",
+                            }}
                           >
                             {/* <a href="#" id="RecoverPassword">
                               Forgot your password?
                             </a>{' '}
                             &nbsp; | &nbsp; */}
-                            Don’t have an account? {" "}
+                            Don’t have an account?{" "}
                             <Link href="/register" id="customer_register_link">
-                              <b><span className="privacy"> Sign Up </span></b>
+                              <b>
+                                <span className="privacy"> Sign Up </span>
+                              </b>
                             </Link>
                           </p>
                         </div>

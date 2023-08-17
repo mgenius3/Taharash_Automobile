@@ -30,7 +30,7 @@ export default function MainHeader() {
     if (out) router.push("/login");
   };
 
-  console.log(user);
+  // console.log(user);
   return (
     //  <!--Header-->
     <Fragment>
@@ -128,10 +128,10 @@ export default function MainHeader() {
                             color: "white",
                             background: "green",
                             borderRadius: "50%",
-                            padding: "3px",
+                            padding: "3px 7px",
                           }}
                         >
-                          {getInitials(user?.fullName)}
+                          {getInitials(user?.fullName).toUpperCase()}
                         </p>
                       </a>
                       {avatarMenu ? (

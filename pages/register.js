@@ -35,7 +35,7 @@ export default function Register() {
           setIsLoading(false);
           toast.success("successful");
           localStorage.setItem("token", response);
-          router.back();
+          router.push("/");
         } else {
           setIsLoading(false);
           toast.error(error);

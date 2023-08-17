@@ -38,10 +38,10 @@ const RegisterNewUser = async (req, res) => {
         fullName: user.name,
         admin: user.admin,
       },
-      process.env.TOKEN_KEY,
-      {
-        expiresIn: "5h",
-      }
+      process.env.TOKEN_KEY
+      // {
+      //   expiresIn: "5h",
+      // }
     );
     //UPDATE USER WITH TOKEN
     await updateUserToken(user.id, token);
@@ -77,10 +77,10 @@ const LoginUser = async (req, res) => {
             fullName: user.name,
             admin: user.admin,
           },
-          process.env.TOKEN_KEY,
-          {
-            expiresIn: "5h",
-          }
+          process.env.TOKEN_KEY
+          // {
+          //   expiresIn: "5h",
+          // }
         );
         //UPDATE USER WITH TOKEN
         await updateUserToken(user.id, token);

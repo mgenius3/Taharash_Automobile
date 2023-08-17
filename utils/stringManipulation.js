@@ -17,17 +17,20 @@ export function shortenString(str, maxLength) {
 export function getInitials(fullName) {
   // Split the input string by whitespaces
 
-  const words = fullName?.split(" ");
+  const words = fullName?.charAt(0);
 
   if (words != undefined) {
     // Get the first letters of the two words
-    const firstLetter1 = words[0][0];
-    const firstLetter2 = words[1][0];
+    // const firstLetter1 = words[0][0];
+    // const firstLetter2 = words[1][0];
 
     // Concatenate the first letters
-    const concatenatedLetters = firstLetter1 + firstLetter2;
+    // const concatenatedLetters = firstLetter1 + firstLetter2;
 
-    return concatenatedLetters;
+    let firstletter = words;
+    return firstletter;
+
+    // return concatenatedLetters;
   }
   return null;
 }
