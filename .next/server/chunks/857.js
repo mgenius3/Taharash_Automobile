@@ -122,15 +122,16 @@ function AdminLayout({ children  }) {
                                                         color: "white",
                                                         backgroundColor: "black",
                                                         borderRadius: "50%",
-                                                        padding: "3px"
+                                                        padding: "5px 10px",
+                                                        margin: "10px"
                                                     },
-                                                    children: (0,_utils_stringManipulation__WEBPACK_IMPORTED_MODULE_11__/* .getInitials */ .Q)(user?.firstName, user?.lastName)
+                                                    children: (0,_utils_stringManipulation__WEBPACK_IMPORTED_MODULE_11__/* .getInitials */ .Q)(user?.fullName)
                                                 }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
                                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
                                                     children: [
-                                                        "Admin -",
-                                                        " ",
-                                                        (0,_utils_stringManipulation__WEBPACK_IMPORTED_MODULE_11__/* .shortenString */ .S)(user?.firstName + " " + user?.lastName, 10)
+                                                        "Admin - ",
+                                                        (0,_utils_stringManipulation__WEBPACK_IMPORTED_MODULE_11__/* .shortenString */ .S)(user?.fullName, 10)
                                                     ]
                                                 })
                                             ]

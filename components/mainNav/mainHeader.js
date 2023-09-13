@@ -55,11 +55,14 @@ export default function MainHeader() {
             <Nav.Link href="/contact" className="text-uppercase mx-3">
               Contact Us
             </Nav.Link>
-            {/* <Nav.Link href="/blog" className="text-uppercase mx-3">
-              Blog
-            </Nav.Link> */}
+            <Nav.Link href="/services" className="text-uppercase mx-3">
+              Services
+            </Nav.Link>
             <Nav.Link href="/automobile" className="text-uppercase mx-3">
               CAR SHOP
+            </Nav.Link>
+            <Nav.Link href="/blog" className="mx-3">
+              BlOG
             </Nav.Link>
           </Nav>
           <Nav>

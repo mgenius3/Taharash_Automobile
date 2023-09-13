@@ -88,7 +88,7 @@ function OurTeam() {
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                         className: "prev",
-                        onClick: ()=>scroll(-20),
+                        onClick: ()=>scroll(-100),
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                             width: 25,
                             src: "/images/prev.png",
@@ -97,7 +97,7 @@ function OurTeam() {
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                         className: "prev",
-                        onClick: ()=>scroll(20),
+                        onClick: ()=>scroll(100),
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                             width: 25,
                             src: "/images/nxt.png",
@@ -106,22 +106,9 @@ function OurTeam() {
                     })
                 ]
             }),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "what_we_do",
-                children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                        className: "poppins",
-                        children: "TESTIMONIALS"
-                    }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                        className: "p1 poppins",
-                        children: [
-                            "See what our customer ",
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                            " say about us"
-                        ]
-                    })
-                ]
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
+                className: "poppins",
+                children: "OUR TEAM"
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                 className: "testimonial_section mt-1",
@@ -133,7 +120,7 @@ function OurTeam() {
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "card_iage_container",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: "/images/Websalesprof.png",
+                                    src: "/images/team/Anita Eghenure Business Admin.jpeg",
                                     className: "card-img-top team_image",
                                     alt: "team menmber"
                                 })
@@ -143,36 +130,11 @@ function OurTeam() {
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                         className: "card-text p poppins black mt-3 mb-1",
-                                        children: "Property Expert"
+                                        children: "Admin"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                         className: "card-title h5 poppins black",
-                                        children: "Gerald Host"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "team_card_footer mt-2",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/twitter.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/linkedin.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/instagram.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/youtube.png",
-                                        alt: "twitter handle"
+                                        children: "Anita Eghenure"
                                     })
                                 ]
                             })
@@ -184,7 +146,7 @@ function OurTeam() {
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "card_iage_container",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: "/images/team4.png",
+                                    src: "/images/team/Anthony Abason Technician.jpeg",
                                     className: "card-img-top team_image",
                                     alt: "team menmber"
                                 })
@@ -194,36 +156,11 @@ function OurTeam() {
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                         className: "card-text p poppins black mt-3 mb-1",
-                                        children: "Property Expert"
+                                        children: "Technician"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                         className: "card-title h5 poppins black",
-                                        children: "Gerald Host"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "team_card_footer mt-2",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/twitter.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/linkedin.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/instagram.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/youtube.png",
-                                        alt: "twitter handle"
+                                        children: "Anthony Abason"
                                     })
                                 ]
                             })
@@ -235,7 +172,7 @@ function OurTeam() {
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "card_iage_container",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: "/images/team3.png",
+                                    src: "/images/team/Christopher Sunday Auto Body Technician.jpeg",
                                     className: "card-img-top team_image",
                                     alt: "team menmber"
                                 })
@@ -245,36 +182,11 @@ function OurTeam() {
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                         className: "card-text p poppins black mt-3 mb-1",
-                                        children: "Property Expert"
+                                        children: "Technician"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                         className: "card-title h5 poppins black",
-                                        children: "Gerald Host"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "team_card_footer mt-2",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/twitter.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/linkedin.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/instagram.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/youtube.png",
-                                        alt: "twitter handle"
+                                        children: "Chris Sunday"
                                     })
                                 ]
                             })
@@ -286,7 +198,7 @@ function OurTeam() {
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "card_iage_container",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: "/images/team2.png",
+                                    src: "/images/team/Emmanuel IkehTechician.jpeg",
                                     className: "card-img-top team_image",
                                     alt: "team menmber"
                                 })
@@ -296,36 +208,11 @@ function OurTeam() {
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                         className: "card-text p poppins black mt-3 mb-1",
-                                        children: "Property Expert"
+                                        children: "Technician"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                         className: "card-title h5 poppins black",
-                                        children: "Gerald Host"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "team_card_footer mt-2",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/twitter.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/linkedin.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/instagram.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/youtube.png",
-                                        alt: "twitter handle"
+                                        children: "Emmanuel Ikeh"
                                     })
                                 ]
                             })
@@ -337,7 +224,7 @@ function OurTeam() {
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "card_iage_container",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: "/images/team1.png",
+                                    src: "/images/team/Genesis Dauda Technician.jpeg",
                                     className: "card-img-top team_image",
                                     alt: "team menmber"
                                 })
@@ -347,36 +234,11 @@ function OurTeam() {
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                         className: "card-text p poppins black mt-3 mb-1",
-                                        children: "Property Expert"
+                                        children: "Technician"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                         className: "card-title h5 poppins black",
-                                        children: "Gerald Host"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "team_card_footer mt-2",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/twitter.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/linkedin.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/instagram.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/youtube.png",
-                                        alt: "twitter handle"
+                                        children: "Genesis Dauda"
                                     })
                                 ]
                             })
@@ -388,7 +250,7 @@ function OurTeam() {
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "card_iage_container",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: "/images/Websalesprof.png",
+                                    src: "/images/team/Ioryoosu Vincent IT Personnel.jpeg",
                                     className: "card-img-top team_image",
                                     alt: "team menmber"
                                 })
@@ -398,36 +260,11 @@ function OurTeam() {
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                         className: "card-text p poppins black mt-3 mb-1",
-                                        children: "Property Expert"
+                                        children: "IT Personnel"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                         className: "card-title h5 poppins black",
-                                        children: "Gerald Host"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "team_card_footer mt-2",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/twitter.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/linkedin.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/instagram.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/youtube.png",
-                                        alt: "twitter handle"
+                                        children: " Ioryoosu Vincent"
                                     })
                                 ]
                             })
@@ -439,7 +276,7 @@ function OurTeam() {
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "card_iage_container",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: "/images/team4.png",
+                                    src: "/images/team/Justice Sunday Apprentice.jpeg",
                                     className: "card-img-top team_image",
                                     alt: "team menmber"
                                 })
@@ -449,36 +286,11 @@ function OurTeam() {
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                         className: "card-text p poppins black mt-3 mb-1",
-                                        children: "Property Expert"
+                                        children: "Apprentice"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                         className: "card-title h5 poppins black",
-                                        children: "Gerald Host"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "team_card_footer mt-2",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/twitter.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/linkedin.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/instagram.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/youtube.png",
-                                        alt: "twitter handle"
+                                        children: " Justice Sunday"
                                     })
                                 ]
                             })
@@ -490,7 +302,7 @@ function OurTeam() {
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "card_iage_container",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: "/images/team3.png",
+                                    src: "/images/team/Linus Samson Technician.jpeg",
                                     className: "card-img-top team_image",
                                     alt: "team menmber"
                                 })
@@ -500,36 +312,11 @@ function OurTeam() {
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                         className: "card-text p poppins black mt-3 mb-1",
-                                        children: "Property Expert"
+                                        children: "Technician"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                         className: "card-title h5 poppins black",
-                                        children: "Gerald Host"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "team_card_footer mt-2",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/twitter.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/linkedin.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/instagram.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/youtube.png",
-                                        alt: "twitter handle"
+                                        children: "Linus Samson"
                                     })
                                 ]
                             })
@@ -541,7 +328,7 @@ function OurTeam() {
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "card_iage_container",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: "/images/team2.png",
+                                    src: "/images/team/Mariam Jude Accountant.jpeg",
                                     className: "card-img-top team_image",
                                     alt: "team menmber"
                                 })
@@ -551,36 +338,11 @@ function OurTeam() {
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                         className: "card-text p poppins black mt-3 mb-1",
-                                        children: "Property Expert"
+                                        children: "Accountant"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                         className: "card-title h5 poppins black",
-                                        children: "Gerald Host"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "team_card_footer mt-2",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/twitter.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/linkedin.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/instagram.png",
-                                        alt: "twitter handle"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/youtube.png",
-                                        alt: "twitter handle"
+                                        children: "Mariam Jude"
                                     })
                                 ]
                             })
@@ -592,7 +354,7 @@ function OurTeam() {
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "card_iage_container",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: "/images/team1.png",
+                                    src: "/images/team/Markus Luke Paint Repair Technician.jpeg",
                                     className: "card-img-top team_image",
                                     alt: "team menmber"
                                 })
@@ -602,42 +364,142 @@ function OurTeam() {
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                         className: "card-text p poppins black mt-3 mb-1",
-                                        children: "Property Expert"
+                                        children: "Technician"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                         className: "card-title h5 poppins black",
-                                        children: "Gerald Host"
+                                        children: "Markus Luke"
                                     })
                                 ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: "card team_card",
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "card_iage_container",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                    src: "/images/team/Nicohlas Yari Technician & Supervisor.jpeg",
+                                    className: "card-img-top team_image",
+                                    alt: "team menmber"
+                                })
                             }),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "team_card_footer mt-2",
+                                className: "card-body p-2",
                                 children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/twitter.png",
-                                        alt: "twitter handle"
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        className: "card-text p poppins black mt-3 mb-1",
+                                        children: "Supervisor"
                                     }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/linkedin.png",
-                                        alt: "twitter handle"
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
+                                        className: "card-title h5 poppins black",
+                                        children: "Nicohlas Yari"
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: "card team_card",
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "card_iage_container",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                    src: "/images/team/Patrick Jacob Workshop Manager.jpeg",
+                                    className: "card-img-top team_image",
+                                    alt: "team menmber"
+                                })
+                            }),
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "card-body p-2",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        className: "card-text p poppins black mt-3 mb-1",
+                                        children: "Manager"
                                     }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/instagram.png",
-                                        alt: "twitter handle"
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
+                                        className: "card-title h5 poppins black",
+                                        children: "Patrick Jacob"
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: "card team_card",
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "card_iage_container",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                    src: "/images/team/Promise Oyum Serving Corper.jpeg",
+                                    className: "card-img-top team_image",
+                                    alt: "team menmber"
+                                })
+                            }),
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "card-body p-2",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        className: "card-text p poppins black mt-3 mb-1",
+                                        children: "Corper"
                                     }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        width: 20,
-                                        src: "/images/youtube.png",
-                                        alt: "twitter handle"
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
+                                        className: "card-title h5 poppins black",
+                                        children: "Promise Oyum"
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: "card team_card",
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "card_iage_container",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                    src: "/images/team/Tope Olufalade Apprentice.jpeg",
+                                    className: "card-img-top team_image",
+                                    alt: "team menmber"
+                                })
+                            }),
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "card-body p-2",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        className: "card-text p poppins black mt-3 mb-1",
+                                        children: "Apprentice"
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
+                                        className: "card-title h5 poppins black",
+                                        children: "Tope Olufalade"
                                     })
                                 ]
                             })
                         ]
                     })
                 ]
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "what_we_do",
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("pre", {
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                            children: "As a customer-centric organization, we understand that your peace of mind is the most important thing. To achieve this, we prioritize doing your car repairs right the first time. We believe that highly qualified and experienced technicians are essential to providing efficient services."
+                        }),
+                        " ",
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                            children: [
+                                " ",
+                                "That is why at Taharish, our team of technicians comprises industry experts, trained automobile engineers, and technicians with recognized skill qualifications, some of whom have over 15 years of experience with specialization in a wide range of makes and models of vehicle parts repair including tyres, exhausts, brakes, engine overhaul, panel beating and vehicle safety inspections as well as car wash service.",
+                                " "
+                            ]
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                            children: "Our primary focus is on delivering top-quality services to our clients. To ensure this, we provide ongoing training and certifications to our employees. In today's technical industry, keeping up with the latest changes is crucial to provide reliable services. Therefore, we have a dedicated training room in our facility to support our training programs."
+                        })
+                    ]
+                })
             })
         ]
     });
@@ -725,7 +587,7 @@ function Portfolio() {
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                 className: "poppins black portfolio_body",
-                                                children: "This is a website for a client who want to achieve their goals and meet their users needs while also increasing their reach. Accross all platforms. This is a website rebrand"
+                                                children: "We recently completed a comprehensive upgrade to enhance the performance and features of a Range Rover. The upgrade included improvements to the engine, suspension, and interior, resulting in a more powerful and luxurious driving experience."
                                             })
                                         ]
                                     }),
@@ -742,7 +604,7 @@ function Portfolio() {
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                 className: "poppins black portfolio_body",
-                                                children: "This is a website for a client who want to achieve their goals and meet their users needs while also increasing their reach. Accross all platforms. This is a website rebrand"
+                                                children: "Our dedicated team of technicians meticulously restored the vehicle to its pristine condition, ensuring every detail was perfected. The owner can now enjoy their exotic car with confidence, knowing it has been handled with the utmost care and precision"
                                             })
                                         ]
                                     })
@@ -763,7 +625,7 @@ function Portfolio() {
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                 className: "poppins black portfolio_body",
-                                                children: "This is a website for a client who want to achieve their goals and meet their users needs while also increasing their reach. Accross all platforms. This is a website rebrand"
+                                                children: "Our skilled technicians use high-quality paints and precision techniques to ensure a flawless finish that enhances your car's appearance and safeguards it from the elements. Whether you're looking for a fresh coat of paint or a custom color change, our car spraying services deliver outstanding results."
                                             })
                                         ]
                                     }),
@@ -780,7 +642,7 @@ function Portfolio() {
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                 className: "poppins black portfolio_body",
-                                                children: "This is a website for a client who want to achieve their goals and meet their users needs while also increasing their reach. Accross all platforms. This is a website rebrand"
+                                                children: "We conduct comprehensive assessments to identify potential problems, whether they relate to the engine, electronics, or other crucial components. With our accurate diagnostics, you can make informed decisions about necessary repairs and ensure your vehicle's optimal performance"
                                             })
                                         ]
                                     })

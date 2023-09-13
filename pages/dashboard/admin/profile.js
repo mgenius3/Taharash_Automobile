@@ -19,6 +19,8 @@ const UserProfile = () => {
     }
   }, [token]);
 
+  console.log(user);
+
   return (
     <UserLayout>
       <div className="card card-style1 border-0">
@@ -30,27 +32,27 @@ const UserProfile = () => {
                   color: "white",
                   backgroundColor: "black",
                   borderRadius: "50%",
-                  padding: "10px",
-                  fontSize: "100px",
+                  width: "30px",
+                  height: "30px",
+                  padding: "10px 25px",
+                  fontSize: "50px",
                 }}
               >
-                {getInitials(user?.firstName, user?.lastName)}
+                {getInitials(user?.fullName)}
               </span>
             </div>
             <div className="col-lg-12 px-xl-10 my-4">
-              <div className="bg-danger d-lg-inline-block py-1-9 px-1-9 px-sm-6 mb-1-9 rounded">
-                <h3 className="h2 text-white mb-0">
-                  {user?.firstName} {user?.lastName}
-                </h3>
+              <div className="bg-danger d-lg-inline-block py-1-9 px-2-9 px-sm-6 mb-1-9 rounded">
+                <h3 className="h2 text-white mb-0">{user?.fullName}</h3>
               </div>
               <br />
               <ul className="list-unstyled mb-1-9">
-                <li className="mb-2 mb-xl-3 display-28">
+                {/* <li className="mb-2 mb-xl-3 display-28">
                   <span className="display-26 text-danger me-2 font-weight-600">
                     Address:
                   </span>{" "}
                   {user?.address}
-                </li>
+                </li> */}
 
                 <li className="mb-2 mb-xl-3 display-28">
                   <span className="display-26 text-danger me-2 font-weight-600">
@@ -59,12 +61,12 @@ const UserProfile = () => {
                   {user?.email}
                 </li>
 
-                <li className="display-28">
+                {/* <li className="display-28">
                   <span className="display-26 text-danger me-2 font-weight-600">
                     Phone:
                   </span>{" "}
                   {user?.telephone}
-                </li>
+                </li> */}
               </ul>
               <ul className="social-icon-style1 list-unstyled mb-0 ps-0">
                 <li>

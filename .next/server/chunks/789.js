@@ -573,9 +573,19 @@ function MainHeader() {
                                     children: "Contact Us"
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Nav.Link, {
+                                    href: "/services",
+                                    className: "text-uppercase mx-3",
+                                    children: "Services"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Nav.Link, {
                                     href: "/automobile",
                                     className: "text-uppercase mx-3",
                                     children: "CAR SHOP"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Nav.Link, {
+                                    href: "/blog",
+                                    className: "mx-3",
+                                    children: "BlOG"
                                 })
                             ]
                         }),

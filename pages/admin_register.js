@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/router";
 import FetchApiClient from "../fetch_api_clients/api";
+import Link from "next/link";
 
 export default function AdminRegister() {
   const [data, setData] = useState({
@@ -32,6 +33,7 @@ export default function AdminRegister() {
         setIsLoading(true);
 
         let { response, error } = await apiClient.post("/register", data);
+        console.log(error);
         if (response) {
           toast.success("successful");
           localStorage.setItem("token", response);
@@ -41,8 +43,6 @@ export default function AdminRegister() {
           setIsLoading(false);
           toast.error(error);
         }
-
-        
       } else {
         toast.error("password and confirm password are not equal");
       }
@@ -62,7 +62,7 @@ export default function AdminRegister() {
           </div>
         </div>
 
-        <div className="container">
+        {/* <div className="container">
           <div className="row">
             <div className="col-12 col-sm-12 col-md-6 col-lg-6 main-col offset-md-3">
               <div className="mb-4">
@@ -219,6 +219,255 @@ export default function AdminRegister() {
                           value="submit"
                         />
                       )}
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div> */}
+
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-sm-12 main-col">
+              <div className="mb-4">
+                <form
+                  onSubmit={handleSubmit(submitNewUser)}
+                  id="CustomerLoginForm"
+                  className="contact-form"
+                >
+                  <h2 className="login mb-4">
+                    <b className="poppins">Create your account</b>
+                  </h2>
+                  {/* <h2 className="login google_h2 mb-4">
+                        <img
+                          className="google"
+                          src="/images/google.png"
+                          alt="google"
+                        />
+                        <b className="poppins">Sign up with Google</b>
+                      </h2>
+                      <p className="black poppins line_or">
+                        {" "}
+                        <hr />
+                        or <hr />
+                      </p> */}
+
+                  <div className="row">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-12">
+                      <div className="form-group">
+                        <label className="black poppins" htmlFor="FirstName">
+                          Name *
+                        </label>
+                        <input
+                          type="text"
+                          name="name"
+                          className="login_input"
+                          placeholder="Your First Name"
+                          id="name"
+                          required
+                          onChange={handleInputChange}
+                        />
+                      </div>
+                    </div>
+                    {/* <div className="col-12 col-sm-12 col-md-12 col-lg-12">
+                          <div className="form-group">
+                            <label className="black poppins" htmlFor="LastName">Last Name *</label>
+                            <input
+                              type="text"
+                              name="lastName"
+                              className="login_input"
+                              placeholder="Your Last Name"
+                              id="LastName"
+                              required
+                              onChange={handleInputChange}
+                            />
+                          </div>
+                        </div>
+                        <div className="col-12 col-sm-12 col-md-12 col-lg-12">
+                          <div className="form-group">
+                            <label className="black poppins" htmlFor="input-telephone">
+                              Telephone <span className="required-f">*</span>
+                            </label>
+                            <input
+                              name="telephone"
+                              id="input-telephone"
+                              className="login_input"
+                              placeholder="Your Telephone"
+                              type="tel"
+                              required
+                              {...register("telephone", {
+                                required: "Please enter telephone number",
+                                minLength: {
+                                  value: 11,
+                                  message:
+                                    "telephone number must be exacty 11 numbers",
+                                },
+                                maxLength: {
+                                  value: 11,
+                                  message:
+                                    "telephone number must be exacty 11 numbers",
+                                },
+                              })}
+                              onChange={handleInputChange}
+                            />
+                            {errors.telephone && (
+                              <div className="text-danger text-center">
+                                {errors.telephone.message}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                        <div className="col-12 col-sm-12 col-md-12 col-lg-12">
+                          <div className="form-group">
+                            <label className="black poppins" htmlFor="input-address-1">
+                              Address <span className="required-f">*</span>
+                            </label>
+                            <input
+                              name="address"
+                              id="input-address-1"
+                              className="login_input"
+                              type="text"
+                              placeholder="Your Address"
+                              required
+                              onChange={handleInputChange}
+                            />
+                          </div>
+                        </div> */}
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-12">
+                      <div className="form-group">
+                        <label
+                          className="black poppins"
+                          htmlFor="CustomerEmail"
+                        >
+                          Email *
+                        </label>
+                        <input
+                          type="email"
+                          name="email"
+                          className="login_input"
+                          placeholder="Your Emal"
+                          {...register("email", {
+                            required: "Please enter email",
+                            pattern: {
+                              value:
+                                /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/i,
+                              message: "Please enter valid email",
+                            },
+                          })}
+                          onChange={handleInputChange}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-12">
+                      <div className="form-group">
+                        <label
+                          className="black poppins"
+                          htmlFor="CustomerPassword"
+                        >
+                          Password *
+                        </label>
+                        <input
+                          type="password"
+                          defaultValue=""
+                          name="password"
+                          className="login_input"
+                          placeholder="Min of 8 Characters"
+                          id="password"
+                          {...register("password", {
+                            required: "Please enter password",
+                            minLength: {
+                              value: 6,
+                              message:
+                                "password should be more than 6 characters",
+                            },
+                          })}
+                          onChange={handleInputChange}
+                        />
+                        {errors.password && (
+                          <div className="text-danger text-center">
+                            {errors.password.message}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-12">
+                      <div className="form-group">
+                        <label
+                          className="black poppins"
+                          htmlFor="CustomerPassword"
+                        >
+                          Confirm Password
+                        </label>
+                        <input
+                          type="password"
+                          defaultValue=""
+                          name="cpassword"
+                          className="login_input"
+                          id="password"
+                          placeholder="confirm password"
+                          onChange={handleInputChange}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-12 mb-4">
+                      <div className="form-group checkdiv">
+                        {/* <input
+                              type="checkbox"
+                              placeholder="Min of 8 Characters"
+                              id="checkboxfield"
+                              // className="login_input"
+                              required
+                              onChange={handleInputChange}
+                            /> */}
+                        {/* <label
+                              className="black poppins"
+                              htmlFor="checkboxfield"
+                            >
+                              I agree to all{" "}
+                              <span className="privacy">
+                                Term, Privacy Policy
+                              </span>{" "}
+                              and <span className="privacy">fees</span>
+                            </label> */}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="text-center col-12 col-sm-12 col-md-12 col-lg-12">
+                      {isLoading ? (
+                        <input
+                          className="btn act_btn mb-3"
+                          value="loading..."
+                          disabled
+                        />
+                      ) : (
+                        <input
+                          type="submit"
+                          className="btn act_btn mb-3"
+                          value="Sign Up"
+                        />
+                      )}
+
+                      <p
+                        className="mb-4 text-center poppins"
+                        style={{
+                          color: "black",
+                          cursor: "pointer",
+                          textAlign: "start !important",
+                        }}
+                      >
+                        {/* <a href="#" id="RecoverPassword">
+                              Forgot your password?
+                            </a>{' '}
+                            &nbsp; | &nbsp; */}
+                        Have an account?{" "}
+                        <Link href="/login" id="customer_register_link">
+                          <b style={{ color: "#6e0000" }}>
+                            <span className="privacy">Log in </span>
+                          </b>
+                        </Link>
+                      </p>
                     </div>
                   </div>
                 </form>

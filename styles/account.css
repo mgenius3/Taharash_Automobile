@@ -165,28 +165,28 @@
 }
 @media (min-height: 600px) {
 }
-.adminNav{
+.adminNav {
   position: absolute;
   right: 0;
 }
-.userNav{
+.userNav {
   right: 0;
 }
-.account_signing{
+.account_signing {
   display: flex;
   column-gap: 10px;
   justify-content: space-between;
   align-items: center;
 }
-.nav_brand{
+.nav_brand {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
   white-space: nowrap;
 }
-.motor_type{
+.motor_type {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -208,7 +208,7 @@
   width: 100%;
   height: 100%;
 } */
-#what_we_do{
+#what_we_do {
   background: white;
   margin-top: 20px;
   display: flex;
@@ -218,47 +218,51 @@
   flex-direction: column;
   align-items: center;
 }
-.what_we_do, .what_to_do_card, .testimonial_section{
+.what_we_do,
+.what_to_do_card,
+.testimonial_section {
   width: 90%;
 }
-.what_we_do > h1{
-  color: #20B15A;
+.what_we_do > h1 {
+  color: #20b15a;
   font-weight: 500;
 }
-.what_we_do > p{
+.what_we_do > p {
   color: black;
   font-weight: 600;
   font-size: 24px;
 }
-.what_to_do_card{ 
+.what_to_do_card {
   display: flex;
   align-items: stretch;
-  height: 350px;
-  overflow: hidden;
+  /* height: 350px;
+  overflow: hidden; */
+  flex-wrap: wrap;
+  justify-content: center;
   column-gap: 20px;
-} 
-.to_do_card{
+}
+.to_do_card {
   padding: 20px 15px;
   width: 18rem;
-  margin-top: 2rem;    
+  margin-top: 2rem;
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
   align-items: flex-start;
 }
-.to_do_card > h4{
+.to_do_card > h4 {
   color: black;
   font-weight: 700;
   font-size: 24px;
   margin-top: 24px;
   margin-bottom: 14px;
 }
-.to_do_card > p{
+.to_do_card > p {
   color: black;
   font-size: 15px;
   font-weight: 900;
 }
-.to_do_card > button{
+.to_do_card > button {
   color: black;
   font-size: 16px;
   font-weight: 900;
@@ -266,16 +270,16 @@
   cursor: pointer;
   margin-top: auto;
 }
-.to_do_card > button > img{
+.to_do_card > button > img {
   margin-left: 10px;
 }
-.to_do_card > .image{
+.to_do_card > .image {
   padding: 25px;
-  background: #D7F5DC;
+  background: #d7f5dc;
   border-radius: 15px;
   width: fit-content;
 }
-.prev{
+.prev {
   padding: 15px;
   border: 1px solid black;
   height: 4rem;
@@ -286,7 +290,7 @@
   align-items: center;
   cursor: pointer;
 }
-.change_button{
+.change_button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -295,8 +299,8 @@
   top: 10px;
   right: 60px;
 }
-.prev:hover{
-  background: #D7F5DC;
+.prev:hover {
+  background: #d7f5dc;
 }
 #why_choose_us {
   background: white;
@@ -305,83 +309,84 @@
   flex-direction: column;
   align-items: center;
 }
-.why_section4{
-  background: #FAFFFB;
+.why_section4 {
+  background: #fafffb;
   display: flex;
   padding: 60px 0;
   align-items: center;
   justify-content: center;
 }
-.section4{
+.section4 {
   width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section4 > div{
+.section4 > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.section4 > div{
+.section4 > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: black;
   padding: 30px;
-  border-right: 1px solid #C4C4C480;
+  border-right: 1px solid #c4c4c480;
 }
-.section4 > div > h2{
-  color: #20B15A;
+.section4 > div > h2 {
+  color: #20b15a;
   font-weight: 900;
 }
-.black{
+.black {
   color: black;
 }
-.lowercase{
+.lowercase {
   text-transform: lowercase;
 }
-.no_border{
+.no_border {
   border: 0 !important;
 }
-.portfolio{
+.portfolio {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-top: 70px;
   flex-shrink: 0;
 }
-.portfolio > div{
+.portfolio > div {
   width: 50%;
   height: fit-content;
 }
-.portfolio > div > div{
+.portfolio > div > div {
   padding: 30px;
 }
-.portfolio_title{
+.portfolio_title {
   font-size: 18px;
   font-weight: 800;
   margin: 20px 0 30px 0;
 }
-.portfolio_body{
+.portfolio_body {
   font-size: 12px;
   font-weight: 900;
 }
-.big_image_card > img, .small_image_card > img{
+.big_image_card > img,
+.small_image_card > img {
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
-.buy_now{
+.buy_now {
   border: 0;
-  background: #20B15A;
+  background: #20b15a;
   border-radius: 10px;
   color: white;
   padding: 10px 20px;
 }
-.testimonia{
+.testimonia {
   border-radius: 15px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   height: fit-content;
@@ -389,150 +394,150 @@
   padding: 30px;
   width: 25rem;
 }
-.testimonia > p{
+.testimonia > p {
   font-weight: 900;
   font-size: 14px;
   flex: 0 0 auto;
 }
-.testimonial_section{ 
+.testimonial_section {
   display: flex;
   align-items: center;
   overflow: hidden;
   height: 350px;
   column-gap: 20px;
-} 
-.testimonial_profile{
+}
+.testimonial_profile {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.testimonial_profile_image{
+.testimonial_profile_image {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 100%;
 }
-.testimonial_profile_image > img{
+.testimonial_profile_image > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-.tes_name{
+.tes_name {
   font-weight: 500;
   font-size: 16px;
 }
-.tes_title{
+.tes_title {
   font-weight: 900;
   font-size: 14px;
 }
-.team_card{
+.team_card {
   flex-shrink: 0;
   width: 10rem;
-  background: #D7F5DC;
+  background: #d7f5dc;
 }
-.card-body > .p{
+.card-body > .p {
   font-size: 14px;
   font-weight: 500;
 }
-.card-body > .h5{
+.card-body > .h5 {
   font-size: 16px;
   font-weight: 800;
 }
-.team_card_footer{
+.team_card_footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 70%;
   margin: 0 auto;
 }
-.text_center{
+.text_center {
   text-align: center;
 }
-.get_a_quote{
+.get_a_quote {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white; 
+  background-color: white;
   padding-bottom: 60px;
 }
-.what_we_do > .send_message{
-  color: #8B8B8B;
+.what_we_do > .send_message {
+  color: #8b8b8b;
   font-size: 14px;
   font-weight: normal;
 }
-.quote_form{
+.quote_form {
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.quote_input{
+.quote_input {
   border-radius: 10px;
   border: 1px solid #000;
   width: 40%;
   font-size: 14px;
 }
 
-.login_input{
+.login_input {
   border-radius: 8px;
   border: 1px solid #000;
   width: 100%;
   font-size: 14px;
   display: block;
 }
-.act_btn{
+.act_btn {
   width: 100%;
   border-radius: 10px;
   padding: 15px;
 }
-.privacy{
-  color: #20B15A;
+.privacy {
+  color: #20b15a;
 }
-.checkdiv{
+.checkdiv {
   display: flex;
   align-items: center;
   column-gap: 20px;
 }
-.checkdiv > label{
+.checkdiv > label {
   margin-bottom: 0;
 }
-.login{
+.login {
   text-align: center;
 }
-.footer_row{
+.footer_row {
   width: 100%;
   justify-content: space-between;
 }
-.footer_log{
+.footer_log {
   color: black !important;
   font-weight: 900 !important;
   font-size: 35px !important;
 }
-.footer_text{
+.footer_text {
   color: black !important;
 }
-.handles{
+.handles {
   display: flex;
   column-gap: 10px;
   align-items: center;
 }
-.carousel-indicators{
+.carousel-indicators {
   display: none;
 }
-.contact_body{
+.contact_body {
   font-weight: 400;
   font-size: 24px;
 }
-.footerwhatsapp{
+.footerwhatsapp {
   position: absolute;
   top: -9rem;
   right: 2rem;
   width: 7rem;
 }
-h2 > .google{
+h2 > .google {
   width: 3rem !important ;
 }
-.google_h2{
+.google_h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -541,16 +546,16 @@ h2 > .google{
   border-radius: 50px;
   padding: 10px;
 }
-.line_or{
+.line_or {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.line_or > hr{
+.line_or > hr {
   width: 43%;
   border: 1px solid black;
 }
-.previos{
+.previos {
   position: absolute;
   left: 20px;
   border: 1px solid black;
@@ -562,7 +567,7 @@ h2 > .google{
   justify-content: center;
   align-items: center;
 }
-.next{
+.next {
   position: absolute;
   right: 20px;
   border: 1px solid black;
@@ -574,10 +579,11 @@ h2 > .google{
   justify-content: center;
   align-items: center;
 }
-.previos > img, .next > img{
+.previos > img,
+.next > img {
   width: 10px !important;
-} 
-.partner{
+}
+.partner {
   width: 98%;
   display: flex;
   height: 4rem;
@@ -587,35 +593,34 @@ h2 > .google{
   padding: 10px 0px;
   position: relative;
 }
-.partner > div{
+.partner > div {
   width: 120px;
   flex-shrink: 0;
 }
-.partner > div > img{
+.partner > div > img {
   object-fit: contain;
   object-position: center;
   width: 100%;
   height: 100%;
 }
-.card_iage_container{
+.card_iage_container {
   width: 100%;
   height: 11rem;
 }
-.team_image{
+.team_image {
   height: 100%;
   object-fit: fill;
   object-position: center;
 }
-.portfolio_container{
+.portfolio_container {
   display: flex;
   column-gap: 20px;
   width: 90%;
   overflow: hidden;
-
 }
-.big_image_card > img{
+.big_image_card > img {
   height: 31rem;
 }
-.small_image_card > img{
+.small_image_card > img {
   height: 20.4rem;
 }

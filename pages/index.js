@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 import Link from "next/link";
 import React, { Fragment, useRef } from "react";
 import { Carousel } from "react-bootstrap";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 import WhatWeDo from "../components/user/whatwedo";
 import WhyChooseUs from "../components/user/whychooseus";
 import SectionFour from "../components/user/sectionfour";
@@ -40,6 +40,7 @@ export default function Home() {
             #footer{
               margin-top: 0;
             }
+            a{font-weight: bolder; font-size:25; text-decoration: none}
 
           `}
         </style>
@@ -48,13 +49,15 @@ export default function Home() {
         <div id="index">
           <div className="d1">
             <h1 className="poppins">Taharish Automobile</h1>
-            <p className="p1 poppins">Umatched Excellence in Car Sales & Repairs “Discover Luxury, Eperience Performance, Uncompromising Quality”</p>
+            <p className="p1 poppins">
+              Umatched Excellence in Car Sales & Repairs “Discover Luxury,
+              Eperience Performance, Uncompromising Quality”
+            </p>
 
             <div className="d1">
               <Link href="/automobile">
                 <span style={{ cursor: "pointer" }}>
-                  <p className="poppins">Get Your Dream Car
-                  </p>
+                  <p className="poppins">Get Your Dream Car</p>
                 </span>
               </Link>
             </div>
@@ -77,52 +80,48 @@ export default function Home() {
           </div>
         </div>
         <div className="motor_type">
-          
-        <div className="previos" onClick={() => scroll(-20)}>
-          <img  src="/images/prev.png" alt="prev" />
+          <div className="previos" onClick={() => scroll(-20)}>
+            <img src="/images/prev.png" alt="prev" />
+          </div>
+          <div className="next" onClick={() => scroll(20)}>
+            <img src="/images/nxt.png" alt="nxt" />
+          </div>
+          <div className="partner" ref={container}>
+            <div className="">
+              <img className="" src="/images/Trello-logo.png" />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner1.png" />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner2.png" />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner3.png" />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner4.png" />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner5.png" />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner6.png" />
+            </div>
+            <div className="">
+              <img className="" src="/images/partner7.png" />
+            </div>
+          </div>
         </div>
-        <div className="next" onClick={() => scroll(20)}>
-          <img src="/images/nxt.png" alt="nxt" />
-        </div>
-        <div className="partner" ref={container}>
-            <div className="">
-              <img className="" src="/images/Trello-logo.png"  />
-            </div>
-            <div className="">
-              <img className="" src="/images/partner1.png"  />
-            </div>
-            <div className="">
-              <img className="" src="/images/partner2.png"  />
-            </div>
-            <div className="">
-              <img className="" src="/images/partner3.png"  />
-            </div>
-            <div className="">
-              <img className="" src="/images/partner4.png"  />
-            </div>
-            <div className="">
-              <img className="" src="/images/partner5.png"  />
-            </div>
-            <div className="">
-              <img className="" src="/images/partner6.png"  />
-            </div>
-            <div className="">
-              <img className="" src="/images/partner7.png"  />
-            </div>
-        </div>
-        </div>
-
 
         <WhatWeDo />
         <WhyChooseUs />
         <SectionFour />
         <Portfolio />
         <OurShop />
-        <Testimonia />
+        {/* <Testimonia /> */}
         <OurTeam />
         <GetQuote />
-
-        
       </Layout>
     </Fragment>
   );

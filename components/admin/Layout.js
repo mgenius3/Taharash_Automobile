@@ -72,15 +72,14 @@ function AdminLayout({ children }) {
                     color: "white",
                     backgroundColor: "black",
                     borderRadius: "50%",
-                    padding: "3px",
+                    padding: "5px 10px",
+                    margin: "10px",
                   }}
                 >
-                  {getInitials(user?.firstName, user?.lastName)}
+                  {getInitials(user?.fullName)}
                 </span>
-                <p>
-                  Admin -{" "}
-                  {shortenString(user?.firstName + " " + user?.lastName, 10)}
-                </p>
+                <br />
+                <p>Admin - {shortenString(user?.fullName, 10)}</p>
               </span>
 
               <img
