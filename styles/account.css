@@ -588,10 +588,11 @@ h2 > .google {
   display: flex;
   height: 4rem;
   background: white;
-  column-gap: 25px;
+  column-gap: 35px;
   overflow: hidden;
   padding: 10px 0px;
   position: relative;
+  justify-content: center;
 }
 .partner > div {
   width: 120px;
@@ -623,4 +624,14 @@ h2 > .google {
 }
 .small_image_card > img {
   height: 20.4rem;
+}
+
+.show-1400 {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .show-1400 {
+    display: flex !important;
+  }
 }

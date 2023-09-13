@@ -80,10 +80,10 @@ export default function Home() {
           </div>
         </div>
         <div className="motor_type">
-          <div className="previos" onClick={() => scroll(-20)}>
+          <div className="previos show-1400" onClick={() => scroll(-20)}>
             <img src="/images/prev.png" alt="prev" />
           </div>
-          <div className="next" onClick={() => scroll(20)}>
+          <div className="next show-1400" onClick={() => scroll(20)}>
             <img src="/images/nxt.png" alt="nxt" />
           </div>
           <div className="partner" ref={container}>
@@ -121,7 +121,7 @@ export default function Home() {
         <OurShop />
         {/* <Testimonia /> */}
         <OurTeam />
-        <GetQuote />
+        {/* <GetQuote /> */}
       </Layout>
     </Fragment>
   );

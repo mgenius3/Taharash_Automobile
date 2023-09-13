@@ -27,7 +27,7 @@ export default function WhatWeDo() {
       <div className="what_to_do_card" ref={container}>
         <div className="to_do_card">
           <div className="image">
-            <img width={30} src="/images/activitylogo.png" alt="activity" />
+            <img width={30} src="/images/diagnostic.png" alt="activity" />
           </div>
           <h4 className="poppins">Diagnostic Check</h4>
           <p className="poppins">
@@ -41,7 +41,7 @@ export default function WhatWeDo() {
         </div>
         <div className="to_do_card">
           <div className="image">
-            <img width={30} src="/images/activitylogo.png" alt="activity" />
+            <img width={30} src="/images/air_condition.png" alt="activity" />
           </div>
           <h4 className="poppins">Air Condition Repairs</h4>
           <p className="poppins">
@@ -55,7 +55,7 @@ export default function WhatWeDo() {
         </div>
         <div className="to_do_card">
           <div className="image">
-            <img width={30} src="/images/activitylogo.png" alt="activity" />
+            <img width={30} src="/images/brake.png" alt="activity" />
           </div>
           <h4 className="poppins">Brake System Repairs</h4>
           <p className="poppins">
@@ -69,7 +69,7 @@ export default function WhatWeDo() {
         </div>
         <div className="to_do_card">
           <div className="image">
-            <img width={30} src="/images/activitylogo.png" alt="activity" />
+            <img width={30} src="/images/wheel.png" alt="activity" />
           </div>
           <h4 className="poppins">Suspension & Steering Systems Repairs</h4>
           <p className="poppins">
