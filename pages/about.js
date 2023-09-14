@@ -42,7 +42,7 @@ export default function AboutUs() {
         </style>
       </Helmet>
 
-      <Layout title="About Us - Landing" whatsapp="whatsapp">
+      <Layout title="About Us" whatsapp="whatsapp">
         <div id="index">
           <div className="d1">
             <h1 className="poppins">ABOUT US</h1>

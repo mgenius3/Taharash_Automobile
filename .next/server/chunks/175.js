@@ -485,10 +485,18 @@ function OurTeam() {
                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("pre", {
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                            style: {
+                                fontFamily: "cursive",
+                                fontSize: "20px"
+                            },
                             children: "As a customer-centric organization, we understand that your peace of mind is the most important thing. To achieve this, we prioritize doing your car repairs right the first time. We believe that highly qualified and experienced technicians are essential to providing efficient services."
                         }),
                         " ",
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                            style: {
+                                fontFamily: "cursive",
+                                fontSize: "20px"
+                            },
                             children: [
                                 " ",
                                 "That is why at Taharish, our team of technicians comprises industry experts, trained automobile engineers, and technicians with recognized skill qualifications, some of whom have over 15 years of experience with specialization in a wide range of makes and models of vehicle parts repair including tyres, exhausts, brakes, engine overhaul, panel beating and vehicle safety inspections as well as car wash service.",
@@ -496,6 +504,10 @@ function OurTeam() {
                             ]
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                            style: {
+                                fontFamily: "cursive",
+                                fontSize: "20px"
+                            },
                             children: "Our primary focus is on delivering top-quality services to our clients. To ensure this, we provide ongoing training and certifications to our employees. In today's technical industry, keeping up with the latest changes is crucial to provide reliable services. Therefore, we have a dedicated training room in our facility to support our training programs."
                         })
                     ]

@@ -1,6 +1,5 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html",
   "/about": "pages/about.html",
@@ -15,11 +14,12 @@
   "/dashboard/admin/automobile/upload": "pages/dashboard/admin/automobile/upload.html",
   "/dashboard/admin/blog": "pages/dashboard/admin/blog.html",
   "/dashboard/admin/blog/upload": "pages/dashboard/admin/blog/upload.html",
-  "/dashboard/admin/messages": "pages/dashboard/admin/messages.html",
   "/dashboard/admin/profile": "pages/dashboard/admin/profile.html",
   "/dashboard/admin/user": "pages/dashboard/admin/user.html",
   "/": "pages/index.html",
+  "/dashboard/admin/messages": "pages/dashboard/admin/messages.html",
   "/login": "pages/login.html",
   "/register": "pages/register.html",
-  "/services": "pages/services.html"
+  "/services": "pages/services.html",
+  "/_error": "pages/_error.js"
 }

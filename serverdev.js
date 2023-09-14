@@ -6,7 +6,7 @@ const dev = process.env.NODE_ENV !== "production";
 dotenv.config();
 const app = next({ dev });
 const handle = app.getRequestHandler();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 const errorHandler = require("./middleware/errorHandler");
 const morgan = require("morgan");
 const { createTableUser } = require("./database/auth");
