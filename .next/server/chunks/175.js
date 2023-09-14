@@ -6,50 +6,48 @@ exports.modules = {
 /***/ 7053:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (/* binding */ GetQuote)
-/* harmony export */ });
+/* unused harmony export default */
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 
 function GetQuote() {
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+    return /*#__PURE__*/ _jsxs("div", {
         id: "get_a_quote",
         className: "mt-0 get_a_quote",
         children: [
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            /*#__PURE__*/ _jsxs("div", {
                 className: "what_we_do text_center",
                 children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
+                    /*#__PURE__*/ _jsx("h1", {
                         className: "poppins",
                         children: "GET A QUOTE TODAY"
                     }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                    /*#__PURE__*/ _jsx("p", {
                         className: "p1 poppins mb-1",
                         children: "SHow can We Help You?"
                     }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                    /*#__PURE__*/ _jsx("p", {
                         className: "poppins send_message",
                         children: "Please  Send A message "
                     })
                 ]
             }),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
+            /*#__PURE__*/ _jsxs("form", {
                 className: "quote_form mt-1",
                 children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
+                    /*#__PURE__*/ _jsx("input", {
                         placeholder: "Enter Your Full Name",
                         className: "quote_input mt-4"
                     }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
+                    /*#__PURE__*/ _jsx("input", {
                         placeholder: "Enter Your Email Adress",
                         className: "quote_input mt-4"
                     }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
+                    /*#__PURE__*/ _jsx("input", {
                         placeholder: "How Can we Be Of Service To You?",
                         className: "quote_input mt-4"
                     }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                    /*#__PURE__*/ _jsx("button", {
                         className: "buy_now poppins mt-4",
                         children: "Get A Quote"
                     })
@@ -486,16 +484,18 @@ function OurTeam() {
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
                             style: {
-                                fontFamily: "cursive",
-                                fontSize: "20px"
+                                fontFamily: "Monaco",
+                                fontSize: "17px",
+                                lineHeight: "30px"
                             },
                             children: "As a customer-centric organization, we understand that your peace of mind is the most important thing. To achieve this, we prioritize doing your car repairs right the first time. We believe that highly qualified and experienced technicians are essential to providing efficient services."
                         }),
                         " ",
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
                             style: {
-                                fontFamily: "cursive",
-                                fontSize: "20px"
+                                fontFamily: "Monaco",
+                                fontSize: "17px",
+                                lineHeight: "30px"
                             },
                             children: [
                                 " ",
@@ -505,8 +505,9 @@ function OurTeam() {
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                             style: {
-                                fontFamily: "cursive",
-                                fontSize: "20px"
+                                fontFamily: "Monaco",
+                                fontSize: "17px",
+                                lineHeight: "30px"
                             },
                             children: "Our primary focus is on delivering top-quality services to our clients. To ensure this, we provide ongoing training and certifications to our employees. In today's technical industry, keeping up with the latest changes is crucial to provide reliable services. Therefore, we have a dedicated training room in our facility to support our training programs."
                         })

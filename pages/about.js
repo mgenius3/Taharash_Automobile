@@ -52,7 +52,7 @@ export default function AboutUs() {
             </p>
 
             <div className="d1">
-              <Link href="/automobile">
+              <Link href="/contact">
                 <span style={{ cursor: "pointer" }}>
                   <p className="poppins">Get A Quote Today</p>
                 </span>
@@ -259,7 +259,7 @@ export default function AboutUs() {
         <SectionFour />
         <Portfolio />
         <OurTeam />
-        <GetQuote />
+        {/* <GetQuote /> */}
       </Layout>
     </Fragment>
   );

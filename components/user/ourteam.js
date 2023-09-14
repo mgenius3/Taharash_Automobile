@@ -293,14 +293,26 @@ export default function OurTeam() {
 
       <div className="what_we_do">
         <pre>
-          <h3 style={{ fontFamily: "cursive", fontSize: "20px" }}>
+          <h3
+            style={{
+              fontFamily: "Monaco",
+              fontSize: "17px",
+              lineHeight: "30px",
+            }}
+          >
             As a customer-centric organization, we understand that your peace of
             mind is the most important thing. To achieve this, we prioritize
             doing your car repairs right the first time. We believe that highly
             qualified and experienced technicians are essential to providing
             efficient services.
           </h3>{" "}
-          <p style={{ fontFamily: "cursive", fontSize: "20px" }}>
+          <p
+            style={{
+              fontFamily: "Monaco",
+              fontSize: "17px",
+              lineHeight: "30px",
+            }}
+          >
             {" "}
             That is why at Taharish, our team of technicians comprises industry
             experts, trained automobile engineers, and technicians with
@@ -310,7 +322,13 @@ export default function OurTeam() {
             overhaul, panel beating and vehicle safety inspections as well as
             car wash service.{" "}
           </p>
-          <p style={{ fontFamily: "cursive", fontSize: "20px" }}>
+          <p
+            style={{
+              fontFamily: "Monaco",
+              fontSize: "17px",
+              lineHeight: "30px",
+            }}
+          >
             Our primary focus is on delivering top-quality services to our
             clients. To ensure this, we provide ongoing training and
             certifications to our employees. In today's technical industry,
