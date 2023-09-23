@@ -444,6 +444,7 @@
 .card-body > .h5 {
   font-size: 16px;
   font-weight: 800;
+  font-family: "Roboto";
 }
 .team_card_footer {
   display: flex;

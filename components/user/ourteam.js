@@ -28,7 +28,9 @@ export default function OurTeam() {
             />
           </div>
           <div className="card-body p-2">
-            <p className="card-text p poppins black mt-3 mb-1">Admin</p>
+            <p className="card-text p poppins black mt-3 mb-1">
+              Service Advisor
+            </p>
             <h5 className="card-title h5 poppins black">Anita Eghenure</h5>
           </div>
           {/* <div className="team_card_footer mt-2">
@@ -295,7 +297,7 @@ export default function OurTeam() {
         <pre>
           <h3
             style={{
-              fontFamily: "Monaco",
+              fontFamily: "Nunito Sans",
               fontSize: "17px",
               lineHeight: "30px",
             }}
@@ -308,7 +310,7 @@ export default function OurTeam() {
           </h3>{" "}
           <p
             style={{
-              fontFamily: "Monaco",
+              fontFamily: "Nunito Sans",
               fontSize: "17px",
               lineHeight: "30px",
             }}
@@ -324,7 +326,7 @@ export default function OurTeam() {
           </p>
           <p
             style={{
-              fontFamily: "Monaco",
+              fontFamily: "Nunito Sans",
               fontSize: "17px",
               lineHeight: "30px",
             }}

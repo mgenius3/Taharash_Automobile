@@ -128,7 +128,7 @@ function OurTeam() {
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                         className: "card-text p poppins black mt-3 mb-1",
-                                        children: "Admin"
+                                        children: "Service Advisor"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                         className: "card-title h5 poppins black",
@@ -484,7 +484,7 @@ function OurTeam() {
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
                             style: {
-                                fontFamily: "Monaco",
+                                fontFamily: "Nunito Sans",
                                 fontSize: "17px",
                                 lineHeight: "30px"
                             },
@@ -493,7 +493,7 @@ function OurTeam() {
                         " ",
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
                             style: {
-                                fontFamily: "Monaco",
+                                fontFamily: "Nunito Sans",
                                 fontSize: "17px",
                                 lineHeight: "30px"
                             },
@@ -505,7 +505,7 @@ function OurTeam() {
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                             style: {
-                                fontFamily: "Monaco",
+                                fontFamily: "Nunito Sans",
                                 fontSize: "17px",
                                 lineHeight: "30px"
                             },

@@ -45,7 +45,7 @@ export default function Home() {
           `}
         </style>
       </Helmet>
-      <Layout title="Landing" whatsapp="whatsapp">
+      <Layout title="" whatsapp="whatsapp">
         <div id="index">
           <div className="d1">
             <h1 className="poppins">Taharish Automobile</h1>
