@@ -403,10 +403,12 @@
 }
 .testimonial_section {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   overflow: hidden;
-  height: 350px;
-  column-gap: 20px;
+
+  /* height: 350px; */
+  column-gap: 10px;
+  margin-bottom: 20px;
 }
 .testimonial_profile {
   display: flex;
@@ -434,7 +436,7 @@
 }
 .team_card {
   flex-shrink: 0;
-  width: 10rem;
+  width: 13rem;
   background: #d7f5dc;
 }
 .card-body > .p {
